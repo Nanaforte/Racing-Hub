@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="icon.png">
+        <title> Freestyle | Racing Hub </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+        
+    <body class="dark-mode">
+        <!-- HEADER (Consistente com o resto do projeto) -->
+        <header class="main-header">
+            <div class="header-container">
+                <a href="index.html" class="logo"> 
+                    <span class="racing">RACING</span> <span class="hub">HUB</span>
+                </a>
+                <button class="menu-toggle" aria-label="Abrir Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="index.html"> Início </a> </li>
+                        <li><a href="motocross.html"> Motocross </a> </li>
+                        <li><a href="f1.html"> F1 </a> </li>
+                        <li><a href="motogp.html"> MotoGP </a> </li>
+                        <li><a href="drift.html"> Drift </a> </li>
+                        <li><a href="rally.html"> Rally </a> </li>
+                        <li><a href="worldsbk.html"> WorldSBK </a> </li>
+                        <li><a href="contactos.html"> Contactos </a> </li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <button id="theme-theme-toggle" class="theme-btn" title="Mudar Modo">
+                        <i class="fas fa-moon"> </i>
+                    </button>
+                </div>
+            </div>  
+        </header>
+
+        <!-- HERO BANNER -->
+        <section class="hero-banner" style="background: linear-gradient(0deg, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+        url('https://www.nzherald.co.nz/resizer/v2/46CAYIS74JEXJHSZD5UYLTQC34.jpg?auth=5cb2949684aafc75e73500337875e91d312d77d65fb0deedaa0131514048d3e1&width=1400&quality=70') no-repeat center center/cover;">
+            <div class="slide active">
+                <div class="slide-content">
+                    <h1> Freestyle Motocross </h1>
+                    <p> Gravidade Zero, Manobras Insanas e Adrenalina Pura no Ar </p>
+                    <a href="#sobre-fmx" class="btn-primary"> Ver mais </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTEÚDO PRINCIPAL -->
+        <main class="container main-content" id="sobre-fmx">
+
+            <div style="max-width: 800px; margin: 20px auto 0 auto; padding: 0 20px;">
+                <a href="motocross.html" style="display: inline-flex; align-items: center; gap: 10px; color: #fff; text-decoration: none; font-weight: bold; font-size: 0.95rem; opacity: 0.8; transition: opacity 0.2s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.8'">
+                    <i class="fas fa-arrow-left"></i> Voltar à Página Motocross Principal
+                </a>
+            </div>
+            
+            <!-- SECÇÃO: EM QUE CONSISTE -->
+            <section class="info-section" style="margin-top: 40px;">
+                <div class="section-title">
+                    <h2> O que é o FMX? </h2>
+                    <p> A arte de desafiar as leis da física em cima de duas rodas </p>
+                </div>
+                <div style="line-height: 1.8; opacity: 0.9; max-width: 800px; margin: 0 auto; text-align: justify;">
+                    <p>O <strong>Freestyle Motocross (FMX)</strong> é uma vertente do motocross onde o cronómetro não importa. O foco absoluto está na execução de acrobacias aéreas enquanto os pilotos saltam de rampas de aço especialmente desenhadas, voando distâncias superiores a 22 metros. Os atletas modificam as suas motas com suspensões extremamente rígidas e cortes nas carenagens (*grab holes*) para conseguirem agarrar o metal em pleno ar.</p>
+                    <p style="margin-top: 15px;"><strong>Formato de Competição:</strong> Os pilotos entram numa arena ou recinto ao ar livre e dispõem de um tempo limite (geralmente entre 90 a 120 segundos) para efetuar a sua melhor sequência de saltos. Um painel de juízes pontua a prestação com base na **dificuldade**, **extensão da manobra**, **variedade**, **estilo** e **utilização de toda a pista**.</p>
+                </div>
+            </section>
+
+            <hr class="section-divider">
+
+            <!-- SECÇÃO: HISTÓRIA -->
+            <section class="history-section">
+                <div class="section-title">
+                    <h2> Da Rebeldia ao Palco Olímpico </h2>
+                    <p> Como saltos de celebração deram origem a um desporto global </p>
+                </div>
+                <div style="line-height: 1.8; opacity: 0.9; max-width: 800px; margin: 0 auto; text-align: justify;">
+                    <p>O FMX nasceu de forma orgânica nos anos 90. Nas corridas tradicionais de motocross, pilotos lendários como Jeremy McGrath começaram a fazer o truque *“Nac-Nac”* nos saltos de meta para celebrar as vitórias. Rapidamente, um grupo de pilotos americanos percebeu que o público vibrava mais com os voos do que com a corrida em si.</p>
+                    <p style="margin-top: 15px;">A modalidade ganhou estrutura competitiva oficial com a inclusão nos **X Games** em 1999. Desde então, o desporto evoluiu de forma assustadora: o que antes parecia impossível tornou-se obrigatório, como o histórico primeiro *Backflip* (mortal à retaguarda) de Carey Hart em 2000 ou o inacreditável *Triple Backflip* de Josh Sheehan em 2015.</p>
+                </div>
+            </section>
+
+            <hr class="section-divider">
+
+            <!-- SECÇÃO: GRANDES EVENTOS -->
+            <section class="classes-section">
+                <div class="section-title">
+                    <h2> Os Maiores Palcos de FMX </h2>
+                    <p> Onde os deuses do ar se reúnem para desafiar a morte </p>
+                </div>
+                <div class="video-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+                    <div class="video-card" style="padding: 20px; background: rgba(255,255,255,0.05); border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);">
+                        <h3 style="color: #e50914; font-size: 1.5rem; margin-bottom: 10px;">X Games</h3>
+                        <p style="font-size: 0.95rem; opacity: 0.8;">Considerados as "Olimpíadas dos Desportos Radicais". É o evento anual onde os pilotos guardam as suas manobras secretas mais perigosas do ano para tentar conquistar a cobiçada medalha de ouro.</p>
+                    </div>
+                    <div class="video-card" style="padding: 20px; background: rgba(255,255,255,0.05); border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);">
+                        <h3 style="color: #e50914; font-size: 1.5rem; margin-bottom: 10px;">Nitro World Games / Circus</h3>
+                        <p style="font-size: 0.95rem; opacity: 0.8;">Criado pela lenda Travis Pastrana, este formato quebrou todas as barreiras ao introduzir rampas gigantescas (*Mega Ramps*) permitindo alturas nunca antes vistas e a evolução de manobras combinadas.</p>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="section-divider">
+
+            
+            <!-- SECÇÃO: MARCAS ICÓNICAS COM IMAGENS (ATUALIZADA) -->
+            <section class="brands-section">
+                <div class="section-title">
+                    <h2> As Motas Preferidas do FMX </h2>
+                    <p> Máquinas modificadas para máxima leveza, resposta de motor e rotação no ar </p>
+                </div>
+                <div class="brands-grid">
+                    <!-- YAMAHA YZ250 -->
+                    <div class="brand-card b-fmx-yz250">
+                        <span>Yamaha YZ250 (2T)</span>
+                    </div>
+
+                    <!-- YAMAHA YZ450F -->
+                    <div class="brand-card b-fmx-yz450f">
+                        <span>Yamaha YZ450F (4T)</span>
+                    </div>
+
+                    <!-- KTM 250 SX -->
+                    <div class="brand-card b-fmx-ktm250">
+                        <span>KTM 250 SX / SX-F</span>
+                    </div>
+
+                    <!-- HONDA CRF450R -->
+                    <div class="brand-card b-fmx-honda450">
+                        <span>Honda CRF450R</span>
+                    </div>
+
+                    <!-- KTM 350 SX-F -->
+                    <div class="brand-card b-fmx-ktm350">
+                        <span>KTM 350 SX-F</span>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        
+        <!-- BOTÃO VOLTAR AO TOPO E FOOTER -->
+        <button id="back-to-top" title="Voltar ao topo"> <i class="fas fa-arrow-up"> </i> </button>
+
+        <footer class="main-footer">
+            <div class="container footer-content">
+                <p>&copy; 2026 Racing Hub. </p>
+            </div>
+        </footer>
+
+        <!-- JANELA MODAL DO FREESTYLE (FMX) -->
+        <div id="brand-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h2 id="modal-title">Modelo da Mota</h2>
+                <hr class="section-divider" style="margin: 15px 0;">
+                
+                <div class="modal-body-layout">
+                    <p id="modal-desc">Informações técnicas e usabilidade da mota no FMX...</p>
+                    <h3>Galeria do Modelo:</h3>
+                    
+                    <!-- O JavaScript injetará a imagem e os dados adicionais aqui -->
+                    <div id="modal-models-list" class="modal-scroll-area"></div>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"> </script>
+    </body>
+</html>

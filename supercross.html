@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="icon.png">
+        <title> Supercross | Racing Hub </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+        
+    <body class="dark-mode">
+        <!-- HEADER (Consistente com o resto do projeto) -->
+        <header class="main-header">
+            <div class="header-container">
+                <a href="index.html" class="logo"> 
+                    <span class="racing">RACING</span> <span class="hub">HUB</span>
+                </a>
+                <button class="menu-toggle" aria-label="Abrir Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="index.html"> Início </a> </li>
+                        <li><a href="motocross.html"> Motocross </a> </li>
+                        <li><a href="f1.html"> F1 </a> </li>
+                        <li><a href="motogp.html"> MotoGP </a> </li>
+                        <li><a href="drift.html"> Drift </a> </li>
+                        <li><a href="rally.html"> Rally </a> </li>
+                        <li><a href="worldsbk.html"> WorldSBK </a> </li>
+                        <li><a href="contactos.html"> Contactos </a> </li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <button id="theme-theme-toggle" class="theme-btn" title="Mudar Modo">
+                        <i class="fas fa-moon"> </i>
+                    </button>
+                </div>
+            </div>  
+        </header>
+
+        <!-- HERO BANNER -->
+        <section class="hero-banner" style="background: linear-gradient(0deg, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+        url('https://mxnews-online.com/wp-content/uploads/2026/05/Haiden-Deegan-holt-beim-Denver-Supercross-Saisonsieg-Nummer-7.jpg') no-repeat center center/cover;">
+            <div class="slide active">
+                <div class="slide-content">
+                    <h1> Supercross </h1>
+                    <p> Luzes, Estádios Cheios e os Voos Mais Técnicos do Planeta </p>
+                    <a href="#sobre-sx" class="btn-primary"> Entrar na Arena </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTEÚDO PRINCIPAL -->
+        <main class="container main-content" id="sobre-sx">
+
+            <div style="max-width: 800px; margin: 20px auto 0 auto; padding: 0 20px;">
+                <a href="motocross.html" style="display: inline-flex; align-items: center; gap: 10px; color: #fff; text-decoration: none; font-weight: bold; font-size: 0.95rem; opacity: 0.8; transition: opacity 0.2s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.8'">
+                    <i class="fas fa-arrow-left"></i> Voltar à Página Motocross Principal
+                </a>
+            </div>
+            
+            <!-- SECÇÃO: EM QUE CONSISTE -->
+            <section class="info-section" style="margin-top: 40px;">
+                <div class="section-title">
+                    <h2> O que é o Supercross? </h2>
+                    <p> A evolução artificial do motocross levada para dentro dos maiores estádios do mundo </p>
+                </div>
+                <div style="line-height: 1.8; opacity: 0.9; max-width: 800px; margin: 0 auto; text-align: justify;">
+                    <p>O <strong>Supercross (SX)</strong> é uma variação do motocross disputada em circuitos temporários construídos dentro de estádios de futebol americano ou basebol. As pistas são feitas com milhares de toneladas de terra compactada, criando um traçado muito mais curto, apertado e rítmico do que o MX tradicional. Aqui, o erro é fatal: os saltos triplos colados a curvas fechadas e as extensas linhas de <i>whoops</i> exigem uma precisão cirúrgica por parte dos pilotos.</p>
+                    <p style="margin-top: 15px;"><strong>Formato de Corrida:</strong> O campeonato mais famoso é o AMA Supercross, nos EUA. A noite de espetáculo é intensa e rápida, composta por corridas de qualificação (Heats), a temida repescagem (LCQ - Last Chance Qualifier) e a grande corrida final (Main Event), que dura <strong>20 minutos mais 1 volta</strong> para a categoria principal.</p>
+                </div>
+            </section>
+
+            <hr class="section-divider">
+
+            <!-- SECÇÃO: HISTÓRIA -->
+            <section class="history-section">
+                <div class="section-title">
+                    <h2> A Origem da "Super Bowl" do MX </h2>
+                    <p> Como uma ideia louca em 1972 mudou o desporto motorizado para sempre </p>
+                </div>
+                <div style="line-height: 1.8; opacity: 0.9; max-width: 800px; margin: 0 auto; text-align: justify;">
+                    <p>Embora tenham existido algumas corridas isoladas antes, o nascimento oficial do desporto aconteceu em 1972, quando o promotor Michael Goodwin organizou a <strong>"Super Bowl of Motocross"</strong> dentro do Los Angeles Memorial Coliseum. O evento juntou estrelas do motocross numa pista artificial desenhada para o entretenimento do público nas bancadas.</p>
+                    <p style="margin-top: 15px;">O sucesso foi tão estrondoso que deu origem ao campeonato AMA Supercross. De um desporto de nicho, o SX transformou-se num espetáculo de entretenimento massivo, com pirotecnia, música, transmissões televisivas milionárias e atletas transformados em autênticas superestrelas globais.</p>
+                </div>
+            </section>
+
+            <hr class="section-divider">
+
+            <!-- SECÇÃO: CATEGORIAS (450SX vs 250SX) -->
+            <section class="classes-section">
+                <div class="section-title">
+                    <h2> Categorias do Supercross </h2>
+                    <p> A divisão de cilindradas no maior palco do mundo </p>
+                </div>
+                <div class="video-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+                    <div class="video-card" style="padding: 20px; background: rgba(255,255,255,0.05); border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);">
+                        <h3 style="color: #e50914; font-size: 1.5rem; margin-bottom: 10px;">Classe 450SX</h3>
+                        <p style="font-size: 0.95rem; opacity: 0.8;">A categoria de elite onde competem os melhores e mais bem pagos pilotos do mundo com motos a 4 tempos de 450cc. É conhecida pelas batalhas agressivas e blocos de ultrapassagem (*block passes*) no limite.</p>
+                    </div>
+                    <div class="video-card" style="padding: 20px; background: rgba(255,255,255,0.05); border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);">
+                        <h3 style="color: #e50914; font-size: 1.5rem; margin-bottom: 10px;">Classe 250SX (Costa Leste / Oeste)</h3>
+                        <p style="font-size: 0.95rem; opacity: 0.8;">Destinada a motores de 250cc. Devido à dimensão dos EUA, esta classe divide-se em dois campeonatos regionais (East e West), juntando-se os pilotos apenas nos icónicos confrontos *Showdown*.</p>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="section-divider">
+
+            <!-- SECÇÃO: MARCAS ICÓNICAS COM IMAGENS -->
+            <section class="brands-section">
+                <div class="section-title">
+                    <h2> Equipas Oficiais de Fábrica </h2>
+                    <p> As potências mecânicas que dominam os estádios americanos </p>
+                </div>
+                <div class="brands-grid">
+                    <div class="brand-card b-sx-kawasaki" style="background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('https://content2.kawasaki.com/ContentStorage/KMC/RacingTeams/1/6429b199-5143-4f40-81d9-240f1bcc14a0.jpg') no-repeat center center/cover; height: 120px;">
+                        <span>Monster Kawasaki</span>
+                    </div>
+
+                    <div class="brand-card b-sx-honda" style="background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('https://cdn.honda.racing/production/224661/conversions/25-honda-hrc-progressive_group_lifestyle-6-large.jpg') no-repeat center center/cover; height: 120px;">
+                        <span>Honda HRC</span>
+                    </div>
+
+                    <div class="brand-card b-sx-ktm" style="background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('https://s7g10.scene7.com/is/image/ktm/RED%20BULL%20KTM%20FACTORY%20RACING%20TEAM%202025?$ogimage$') no-repeat center center/cover; height: 120px;">
+                        <span>Red Bull KTM</span>
+                    </div>
+
+                    <div class="brand-card b-sx-yamaha" style="background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('https://www.cyclenews.com/wp-content/uploads/2019/12/2020-Monster-Energy-Yamaha-Factory-Team-4.jpeg') no-repeat center center/cover; height: 120px;">
+                        <span>Monster Yamaha</span>
+                    </div>
+
+                    <div class="brand-card b-sx-husqvarna" style="background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('https://s7g10.scene7.com/is/image/ktm/124258_GroupsMisc-HusqTeam-Nov22-Emery-280?wid=1000&dpr=off') no-repeat center center/cover; height: 120px;">
+                        <span>Rockstar Husqvarna</span>
+                    </div>
+
+                    <div class="brand-card b-sx-suzuki" style="background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('https://motocrossactionmag.com/wp-content/uploads/2022/01/2ad004aa-5699-e0d8-6e79-d6d9c6b9b31c.jpeg') no-repeat center center/cover; height: 120px;">
+                        <span>Twisted Tea Suzuki</span>
+                    </div>
+
+                    <div class="brand-card b-sx-triumph" style="background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('https://www.supermotocross.com/wp-content/uploads/2024/02/Triumph-FMS-2.jpg') no-repeat center center/cover; height: 120px;">
+                        <span>Triumph Racing</span>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        
+        <button id="back-to-top" title="Voltar ao topo"> <i class="fas fa-arrow-up"> </i> </button>
+
+        <footer class="main-footer">
+            <div class="container footer-content">
+                <p>&copy; 2026 Racing Hub. </p>
+            </div>
+        </footer>
+
+        <div id="brand-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h2 id="modal-title">Título da Equipa</h2>
+                <hr class="section-divider" style="margin: 15px 0;">
+                
+                <div class="modal-body-layout">
+                    <p id="modal-desc">Descrição sobre a equipa de fábrica...</p>
+                    <h3 id="modal-sub-title">Destaques da Equipa:</h3>
+                    
+                    <div id="modal-models-list" class="modal-scroll-area">
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"> </script>
+    </body>
+</html>

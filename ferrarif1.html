@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="icon.png">
+        <title> Ferrari | Racing Hub </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <style>
+            /* Sobrecrita local para aplicar o Vermelho Corsa oficial da Ferrari */
+            :root {
+                --accent-color: #E10600; 
+            }
+            body.light-mode {
+                --accent-color: #c90500; /* Tom ligeiramente mais escuro para melhor contraste no modo claro */
+            }
+            /* Garante consistência de bordas com o ficheiro global */
+            .video-card {
+                border: 1px solid var(--accent-color) !important;
+            }
+        </style>
+    </head>
+        
+    <body class="dark-mode">
+        <!-- HEADER (Consistente com todo o projeto) -->
+        <header class="main-header">
+            <div class="header-container">
+                <a href="index.html" class="logo"> 
+                    <span class="racing">RACING</span> <span class="hub">HUB</span>
+                </a>
+                <button class="menu-toggle" aria-label="Abrir Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="index.html"> Início </a> </li>
+                        <li><a href="motocross.html"> Motocross </a> </li>
+                        <li><a href="f1.html"> F1 </a> </li>
+                        <li><a href="motogp.html"> MotoGP </a> </li>
+                        <li><a href="drift.html"> Drift </a> </li>
+                        <li><a href="rally.html"> Rally </a> </li>
+                        <li><a href="worldsbk.html"> WorldSBK </a> </li>
+                        <li><a href="contactos.html"> Contactos </a> </li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <button id="theme-theme-toggle" class="theme-btn" title="Mudar Modo">
+                        <i class="fas fa-moon"> </i>
+                    </button>
+                </div>
+            </div>  
+        </header>
+
+        <!-- HERO BANNER -->
+        <section class="hero-banner" style="background: linear-gradient(0deg, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+        url('https://cdn-cs-images.racer.com/v3/assets/blte77f57883ea46be1/blt880c72fb226a011e/68fe1cbae0a1265ac735b030/GettyImages-2243259259.jpg?environment=live') no-repeat center center/cover;">
+            <div class="slide active">
+                <div class="slide-content">
+                    <h1> Ferrari </h1>
+                    <p> Paixão, Tradição e o Mito do Cavallino Rampante na Fórmula 1 </p>
+                    <a href="#sobre-ferrari" class="btn-primary"> Entrar em Maranello </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTEÚDO PRINCIPAL -->
+        <main class="container main-content" id="sobre-ferrari">
+
+            <div style="max-width: 800px; margin: 20px auto 0 auto; padding: 0 20px;">
+                <a href="f1.html" style="display: inline-flex; align-items: center; gap: 10px; color: var(--text-main); text-decoration: none; font-weight: bold; font-size: 0.95rem; opacity: 0.8; transition: var(--transition-smooth);" onmouseover="this.style.color='var(--accent-color)'" onmouseout="this.style.color='var(--text-main)'">
+                    <i class="fas fa-arrow-left"></i> Voltar à Página F1 Principal
+                </a>
+            </div>
+            
+            <!-- SECÇÃO: QUEM SÃO -->
+            <section class="info-section" style="margin-top: 40px;">
+                <div class="section-title">
+                    <h2> O Coração da Fórmula 1 </h2>
+                    <p> A única equipa presente em todas as temporadas desde a criação do campeonato em 1950 </p>
+                </div>
+                <div style="line-height: 1.8; opacity: 0.9; max-width: 800px; margin: 0 auto; text-align: justify;">
+                    <p>A <strong>Ferrari</strong>, com sede em Maranello, Itália, é muito mais do que uma equipa de corridas — é uma religião para milhões de adeptos por todo o mundo, conhecidos como os <i>Tifosi</i>. Fundada pelo lendário Enzo Ferrari, a equipa italiana detém quase todos os recordes históricos importantes da modalidade e representa a alma imutável do desporto automóvel, onde o carro vermelho é o ícone máximo da velocidade.</p>
+                </div>
+            </section>
+
+            <hr class="section-divider">
+
+            <!-- SECÇÃO: HISTÓRIA -->
+            <section class="history-section">
+                <div class="section-title">
+                    <h2> Da Paixão de Enzo à Era de Ouro </h2>
+                    <p> O percurso da marca que coloca as corridas acima de tudo </p>
+                </div>
+                <div style="line-height: 1.8; opacity: 0.9; max-width: 800px; margin: 0 auto; text-align: justify;">
+                    <p>Enzo Ferrari criou a equipa originalmente para apoiar pilotos privados que corriam com carros Alfa Romeo. No entanto, em 1947, nasceu o primeiro carro com o símbolo da Ferrari. A Scuderia estreou-se no campeonato do mundo de F1 no GP do Mónaco de 1950, alcançando a sua primeira vitória em 1951, através de José Froilán González.</p>
+                    <p style="margin-top: 15px;">Ao longo das décadas, a Ferrari viveu momentos de absoluto domínio e secas profundas. O período mais glorioso da sua história moderna aconteceu entre os anos de 1999 e 2004, quando uma "Dream Team" liderada por Jean Todt, Ross Brawn e o incomparável Michael Schumacher obliterou a concorrência, conquistando 6 títulos de construtores consecutivos e redefinindo os níveis de profissionalismo na F1.</p>
+                </div>
+            </section>
+
+            <hr class="section-divider">
+
+            <!-- SECÇÃO: PALMARÉS -->
+            <section class="classes-section">
+                <div class="section-title">
+                    <h2> A lista de conquistas mais rica da F1 </h2>
+                    <p> Os números que consagram a escuderia italiana no topo da história </p>
+                </div>
+                <div class="video-grid" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));">
+                    <div class="video-card" style="padding: 20px; background: rgba(255,255,255,0.05); border-radius: 8px; text-align: center;">
+                        <h3 style="color: var(--accent-color); font-size: 2.5rem; margin-bottom: 5px; padding: 0;">16</h3>
+                        <p style="font-size: 0.95rem; opacity: 0.8; font-weight: bold;">Títulos de Construtores</p>
+                    </div>
+                    <div class="video-card" style="padding: 20px; background: rgba(255,255,255,0.05); border-radius: 8px; text-align: center;">
+                        <h3 style="color: var(--accent-color); font-size: 2.5rem; margin-bottom: 5px; padding: 0;">15</h3>
+                        <p style="font-size: 0.95rem; opacity: 0.8; font-weight: bold;">Títulos de Pilotos</p>
+                    </div>
+                    <div class="video-card" style="padding: 20px; background: rgba(255,255,255,0.05); border-radius: 8px; text-align: center;">
+                        <h3 style="color: var(--accent-color); font-size: 2.5rem; margin-bottom: 5px; padding: 0;">245+</h3>
+                        <p style="font-size: 0.95rem; opacity: 0.8; font-weight: bold;">Vitórias em Corridas</p>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="section-divider">
+
+            <!-- SECÇÃO: ICONES / PILOTOS LENDÁRIOS -->
+            <section class="brands-section">
+                <div class="section-title">
+                    <h2> Pilotos Lendários </h2>
+                    <p> Os heróis que guiaram as máquinas vermelhas rumo à imortalidade </p>
+                </div>
+                <div class="brands-grid">
+                    <div class="brand-card b-f1-schumacher-ferrari">
+                        <span>Michael Schumacher</span>
+                    </div>
+                    <div class="brand-card b-f1-lauda">
+                        <span>Niki Lauda</span>
+                    </div>
+                    <div class="brand-card b-f1-ascari">
+                        <span>Alberto Ascari</span>
+                    </div>
+                    <div class="brand-card b-f1-villeneuve">
+                        <span>Gilles Villeneuve</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECÇÃO: PILOTOS ATUAIS -->
+            <section class="brands-section">
+                <div class="section-title">
+                    <h2> Pilotos Atuais </h2>
+                </div>
+                <div class="brands-grid">
+                    <div class="brand-card b-f1-leclerc">
+                        <span>Charles Leclerc</span>
+                    </div>
+                    <div class="brand-card b-f1-hamilton-ferrari">
+                        <span>Lewis Hamilton</span>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        
+        <!-- BOTÃO VOLTAR AO TOPO E FOOTER -->
+        <button id="back-to-top" title="Voltar ao topo"> <i class="fas fa-arrow-up"> </i> </button>
+
+        <footer class="main-footer">
+            <div class="container footer-content">
+                <p>&copy; 2026 Racing Hub. </p>
+            </div>
+        </footer>
+
+
+<!-- JANELA MODAL DOS PILOTOS DE F1 -->
+        <div id="brand-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <div style="display: flex; align-items: center; gap: 15px;">
+                    <h2 id="modal-title" style="margin: 0;">Nome do Piloto</h2>
+                    <img id="modal-flag-img" src="" alt="Bandeira" style="width: 40px; height: auto; border-radius: 4px; box-shadow: 0 2px 4px rgba(0,0,0,0.3); display: none;">
+                </div>
+                <hr class="section-divider" style="margin: 15px 0;">
+                
+                <div class="modal-body-layout">
+                    <p style="font-size: 1.1rem; margin-bottom: 8px;"><strong>Idade:</strong> <span id="modal-age">-</span> anos</p>
+                    <p style="font-size: 1.1rem; margin-bottom: 15px;"><strong>Equipas Anteriores:</strong> <span id="modal-teams">-</span></p>
+                    
+                    <p id="modal-desc">Biografia resumida do piloto no desporto...</p>
+                    
+                    <h3>Galeria / Destaque:</h3>
+                    <div id="modal-models-list" class="modal-scroll-area"></div>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="script.js"> </script>
+    </body>
+</html>

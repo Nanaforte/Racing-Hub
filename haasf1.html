@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="icon.png">
+        <title> Haas | Racing Hub </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <style>
+            /* Sobrecrita local para aplicar o Vermelho Escarlate oficial da Haas */
+            :root {
+                --accent-color: #E60000; 
+            }
+            body.light-mode {
+                --accent-color: #CC0000; /* Tom ligeiramente ajustado para o modo claro */
+            }
+            /* Garante consistência visual de bordas com os restantes cartões do projeto */
+            .video-card {
+                border: 1px solid var(--accent-color) !important;
+            }
+        </style>
+    </head>
+        
+    <body class="dark-mode">
+        <!-- HEADER (Consistente com todo o projeto) -->
+        <header class="main-header">
+            <div class="header-container">
+                <a href="index.html" class="logo"> 
+                    <span class="racing">RACING</span> <span class="hub">HUB</span>
+                </a>
+                <button class="menu-toggle" aria-label="Abrir Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="index.html"> Início </a> </li>
+                        <li><a href="motocross.html"> Motocross </a> </li>
+                        <li><a href="f1.html"> F1 </a> </li>
+                        <li><a href="motogp.html"> MotoGP </a> </li>
+                        <li><a href="drift.html"> Drift </a> </li>
+                        <li><a href="rally.html"> Rally </a> </li>
+                        <li><a href="worldsbk.html"> WorldSBK </a> </li>
+                        <li><a href="contactos.html"> Contactos </a> </li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <button id="theme-theme-toggle" class="theme-btn" title="Mudar Modo">
+                        <i class="fas fa-moon"> </i>
+                    </button>
+                </div>
+            </div>  
+        </header>
+
+        <!-- HERO BANNER -->
+        <section class="hero-banner" style="background: linear-gradient(0deg, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+        url('https://www.f1-fansite.com/wp-content/uploads/2023/02/Haas-VF23-right-front-view-1200x675.jpeg') no-repeat center center/cover;">
+            <div class="slide active">
+                <div class="slide-content">
+                    <h1> Haas </h1>
+                    <p> Resiliência, Garra Americana e a Ambição no Coração da Fórmula 1 </p>
+                    <a href="#sobre-haas" class="btn-primary"> Entrar em Kannapolis </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTEÚDO PRINCIPAL -->
+        <main class="container main-content" id="sobre-haas">
+
+            <div style="max-width: 800px; margin: 20px auto 0 auto; padding: 0 20px;">
+                <a href="f1.html" style="display: inline-flex; align-items: center; gap: 10px; color: var(--text-main); text-decoration: none; font-weight: bold; font-size: 0.95rem; opacity: 0.8; transition: var(--transition-smooth);" onmouseover="this.style.color='var(--accent-color)'" onmouseout="this.style.color='var(--text-main)'">
+                    <i class="fas fa-arrow-left"></i> Voltar à Página F1 Principal
+                </a>
+            </div>
+            
+            <!-- SECÇÃO: QUEM SÃO -->
+            <section class="info-section" style="margin-top: 40px;">
+                <div class="section-title">
+                    <h2> O Espírito Americano na Grelha </h2>
+                    <p> A primeira equipa totalmente americana do século XXI a desafiar os gigantes da F1 </p>
+                </div>
+                <div style="line-height: 1.8; opacity: 0.9; max-width: 800px; margin: 0 auto; text-align: justify;">
+                    <p>A <strong>Haas</strong>, sediada em Kannapolis, Carolina do Norte, com bases operacionais em Banbury (Reino Unido) e Varano (Itália), representa o espírito de resiliência e inovação pragmática. Fundada pelo magnata industrial Gene Haas, a equipa quebrou moldes tradicionais ao estabelecer uma parceria técnica estreita com a Ferrari e a Dallara. Vestida com as suas cores clássicas — cinzento, branco e o vibrante vermelho — a Haas conquistou fãs pelo mundo fora pela sua atitude genuína e competitiva.</p>
+                </div>
+            </section>
+
+            <hr class="section-divider">
+
+            <!-- SECÇÃO: HISTÓRIA -->
+            <section class="history-section">
+                <div class="section-title">
+                    <h2> Da Estreia de Sonho ao Modelo Colaborativo </h2>
+                    <p> A história da equipa que provou que a eficiência pode desafiar a tradição </p>
+                </div>
+                <div style="line-height: 1.8; opacity: 0.9; max-width: 800px; margin: 0 auto; text-align: justify;">
+                    <p>Haas fundou a equipa in 2014, mas a tão esperada estreia nas pistas aconteceu no Grande Prémio da Austrália em 2016. Logo nessa primeira corrida, a Haas surpreendeu o mundo com um incrível 6º lugar. Sob a carismática e famosa liderança inicial de Guenther Steiner, a equipa tornou-se uma das figuras mais marcantes do paddock, culminando na sua melhor temporada em 2018, onde garantiu o 5º lugar no campeonato de construtores.</p>
+                    <p style="margin-top: 15px;">Ao longo dos anos, a Haas enfrentou tempestades financeiras e desportivas com uma enorme força de vontade. Em 2022, celebrou um dos momentos mais icónicos da sua história quando Kevin Magnussen conquistou uma mítica e emocionante Pole Position no Grande Prémio do Brasil, provando que o ADN da Haas é feito de surpresas e pura paixão pelas corridas.</p>
+                </div>
+            </section>
+
+            <hr class="section-divider">
+
+            <!-- SECÇÃO: PALMARÉS -->
+            <section class="classes-section">
+                <div class="section-title">
+                    <h2> A Evolução na Fórmula 1 em Números </h2>
+                    <p> Os marcos importantes alcançados pela jovem e audaz estrutura americana </p>
+                </div>
+                <div class="video-grid" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));">
+                    <div class="video-card" style="padding: 20px; background: rgba(255,255,255,0.05); border-radius: 8px; text-align: center;">
+                        <h3 style="color: var(--accent-color); font-size: 2.5rem; margin-bottom: 5px; padding: 0;">5º</h3>
+                        <p style="font-size: 0.95rem; opacity: 0.8; font-weight: bold;">Melhor Posição de Construtores (2018)</p>
+                    </div>
+                    <div class="video-card" style="padding: 20px; background: rgba(255,255,255,0.05); border-radius: 8px; text-align: center;">
+                        <h3 style="color: var(--accent-color); font-size: 2.5rem; margin-bottom: 5px; padding: 0;">1</h3>
+                        <p style="font-size: 0.95rem; opacity: 0.8; font-weight: bold;">Pole Position Histórica</p>
+                    </div>
+                    <div class="video-card" style="padding: 20px; background: rgba(255,255,255,0.05); border-radius: 8px; text-align: center;">
+                        <h3 style="color: var(--accent-color); font-size: 2.5rem; margin-bottom: 5px; padding: 0;">180+</h3>
+                        <p style="font-size: 0.95rem; opacity: 0.8; font-weight: bold;">Grandes Prémios Disputados</p>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="section-divider">
+
+            <!-- SECÇÃO: PILOTOS DE DESTAQUE -->
+            <section class="brands-section">
+                <div class="section-title">
+                    <h2> Pilotos de Destaque </h2>
+                    <p> Os nomes que deixaram a sua marca e ajudaram a construir o legado da equipa </p>
+                </div>
+                <div class="brands-grid">
+
+                    <div class="brand-card b-f1-magnussen">
+                        <span>Kevin Magnussen</span>
+                    </div>
+                    <div class="brand-card b-f1-grosjean">
+                        <span>Romain Grosjean</span>
+                    </div>
+                    <div class="brand-card b-f1-nico">
+                        <span>Nico Hülkenberg</span>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- SECÇÃO: PILOTOS ATUAIS -->
+            <section class="brands-section" style="margin-top: 40px;">
+                <div class="section-title">
+                    <h2> Pilotos Atuais </h2>
+                    <p> O alinhamento oficial da equipa na grelha </p>
+                </div>
+                <div class="brands-grid">
+                    <div class="brand-card b-f1-ocon">
+                        <span>Esteban Ocon</span>
+                    </div>
+                    <div class="brand-card b-f1-oliver">
+                        <span>Oliver Bearman</span>
+                    </div>
+
+                </div>
+            </section>
+
+        </main>
+        
+        <!-- BOTÃO VOLTAR AO TOPO E FOOTER -->
+        <button id="back-to-top" title="Voltar ao topo"> <i class="fas fa-arrow-up"> </i> </button>
+
+        <footer class="main-footer">
+            <div class="container footer-content">
+                <p>&copy; 2026 Racing Hub. </p>
+            </div>
+        </footer>
+
+
+
+        <!-- JANELA MODAL DOS PILOTOS DE F1 -->
+        <div id="brand-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <div style="display: flex; align-items: center; gap: 15px;">
+                    <h2 id="modal-title" style="margin: 0;">Nome do Piloto</h2>
+                    <img id="modal-flag-img" src="" alt="Bandeira" style="width: 40px; height: auto; border-radius: 4px; box-shadow: 0 2px 4px rgba(0,0,0,0.3); display: none;">
+                </div>
+                <hr class="section-divider" style="margin: 15px 0;">
+                
+                <div class="modal-body-layout">
+                    <p style="font-size: 1.1rem; margin-bottom: 8px;"><strong>Idade:</strong> <span id="modal-age">-</span> anos</p>
+                    <p style="font-size: 1.1rem; margin-bottom: 15px;"><strong>Equipas Anteriores:</strong> <span id="modal-teams">-</span></p>
+                    
+                    <p id="modal-desc">Biografia resumida do piloto no desporto...</p>
+                    
+                    <h3>Galeria / Destaque:</h3>
+                    <div id="modal-models-list" class="modal-scroll-area"></div>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"> </script>
+    </body>
+</html>

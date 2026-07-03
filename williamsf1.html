@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="icon.png">
+        <title> Williams | Racing Hub </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <style>
+            /* Sobrecrita local para aplicar o Azul Elétrico oficial da Williams */
+            :root {
+                --accent-color: #00A3E0; 
+            }
+            body.light-mode {
+                --accent-color: #0082B3; /* Tom ajustado para legibilidade e contraste no modo claro */
+            }
+            /* Garante consistência visual de bordas com os restantes cartões do projeto */
+            .video-card {
+                border: 1px solid var(--accent-color) !important;
+            }
+        </style>
+    </head>
+        
+    <body class="dark-mode">
+        <!-- HEADER (Consistente com todo o projeto) -->
+        <header class="main-header">
+            <div class="header-container">
+                <a href="index.html" class="logo"> 
+                    <span class="racing">RACING</span> <span class="hub">HUB</span>
+                </a>
+                <button class="menu-toggle" aria-label="Abrir Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="index.html"> Início </a> </li>
+                        <li><a href="motocross.html"> Motocross </a> </li>
+                        <li><a href="f1.html"> F1 </a> </li>
+                        <li><a href="motogp.html"> MotoGP </a> </li>
+                        <li><a href="drift.html"> Drift </a> </li>
+                        <li><a href="rally.html"> Rally </a> </li>
+                        <li><a href="worldsbk.html"> WorldSBK </a> </li>
+                        <li><a href="contactos.html"> Contactos </a> </li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <button id="theme-theme-toggle" class="theme-btn" title="Mudar Modo">
+                        <i class="fas fa-moon"> </i>
+                    </button>
+                </div>
+            </div>  
+        </header>
+
+        <!-- HERO BANNER -->
+        <section class="hero-banner" style="background: linear-gradient(0deg, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+        url('https://www.williamsf1.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ffnx611yr%2Fproductionv2%2Fbde29333e20400cfbc3c6157481409c0273cf1b1-5120x2880.jpg%3Fw%3D1920%26h%3D1080%26auto%3Dformat&w=3840&q=75&dpl=dpl_5z1JzWLrHdQUsHehGoq8BScHtTBq') no-repeat center center/cover;">
+            <div class="slide active">
+                <div class="slide-content">
+                    <h1> Williams Racing </h1>
+                    <p> Tradição, Engenharia Pura e o Orgulho Britânico na Fórmula 1 </p>
+                    <a href="#sobre-williams" class="btn-primary"> Entrar pela história </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTEÚDO PRINCIPAL -->
+        <main class="container main-content" id="sobre-williams">
+
+            <div style="max-width: 800px; margin: 20px auto 0 auto; padding: 0 20px;">
+                <a href="f1.html" style="display: inline-flex; align-items: center; gap: 10px; color: var(--text-main); text-decoration: none; font-weight: bold; font-size: 0.95rem; opacity: 0.8; transition: var(--transition-smooth);" onmouseover="this.style.color='var(--accent-color)'" onmouseout="this.style.color='var(--text-main)'">
+                    <i class="fas fa-arrow-left"></i> Voltar à Página F1 Principal
+                </a>
+            </div>
+            
+            <!-- SECÇÃO: QUEM SÃO -->
+            <section class="info-section" style="margin-top: 40px;">
+                <div class="section-title">
+                    <h2> O Coração do Automobilismo Garagista </h2>
+                    <p> Uma das três grandes potências históricas que moldaram o ADN da Fórmula 1 </p>
+                </div>
+                <div style="line-height: 1.8; opacity: 0.9; max-width: 800px; margin: 0 auto; text-align: justify;">
+                    <p>A <strong>Williams Racing</strong>, sediada no icónico complexo de Grove, em Oxfordshire, Inglaterra, representa a essência mais pura do desporto automóvel britânico. Fundada pelo lendário Sir Frank Williams e pelo génio da engenharia Sir Patrick Head, a equipa ergueu-se a partir de origens humildes para desafiar e derrotar os maiores construtores do planeta. Conhecida pelo seu tradicional azul marinho e azul elétrico, a escuderia mantém vivo o espírito de dedicação implacável e paixão pelas corridas.</p>
+                </div>
+            </section>
+
+            <hr class="section-divider">
+
+            <!-- SECÇÃO: HISTÓRIA -->
+            <section class="history-section">
+                <div class="section-title">
+                    <h2> O Legado Inabalável de Sir Frank Williams </h2>
+                    <p> A impressionante caminhada da equipa privada que conquistou o topo do mundo </p>
+                </div>
+                <div style="line-height: 1.8; opacity: 0.9; max-width: 800px; margin: 0 auto; text-align: justify;">
+                    <p>Fundada em 1977, a Williams não tardou a deixar a sua mark. A primeira vitória surgiu no GP da Grã-Bretanha de 1979 com Clay Regazzoni, abrindo caminho para uma era de domínio avassalador nas décadas de 80 e 90. Mesmo após o trágico acidente que deixou Frank Williams numa cadeira de rodas em 1986, a liderança e a resiliência do fundador serviram de combustível para que a equipa continuasse a vencer campeonatos e a quebrar recordes de velocidade nas pistas.</p>
+                    <p style="margin-top: 15px;">A Williams celebrizou-se pelos seus carros tecnologicamente revolucionários, com destaque para o lendário FW14B de 1992, que contava com suspensão ativa e ajudou a esmagar a concorrência. Após décadas sob o controlo direto da família Williams, a equipa iniciou um novo capítulo em 2020 ao ser adquirida pela Dorilton Capital, focando-se num processo ambicioso de modernização e reestruturação para regressar ao topo do pódio.</p>
+                </div>
+            </section>
+
+            <hr class="section-divider">
+
+            <!-- SECÇÃO: PALMARÉS -->
+            <section class="classes-section">
+                <div class="section-title">
+                    <h2> A Glória em Números </h2>
+                    <p> Os marcos históricos de uma das garagens mais bem-sucedidas de sempre </p>
+                </div>
+                <div class="video-grid" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));">
+                    <div class="video-card" style="padding: 20px; background: rgba(255,255,255,0.05); border-radius: 8px; text-align: center;">
+                        <h3 style="color: var(--accent-color); font-size: 2.5rem; margin-bottom: 5px; padding: 0;">9</h3>
+                        <p style="font-size: 0.95rem; opacity: 0.8; font-weight: bold;">Títulos de Construtores</p>
+                    </div>
+                    <div class="video-card" style="padding: 20px; background: rgba(255,255,255,0.05); border-radius: 8px; text-align: center;">
+                        <h3 style="color: var(--accent-color); font-size: 2.5rem; margin-bottom: 5px; padding: 0;">7</h3>
+                        <p style="font-size: 0.95rem; opacity: 0.8; font-weight: bold;">Títulos de Pilotos</p>
+                    </div>
+                    <div class="video-card" style="padding: 20px; background: rgba(255,255,255,0.05); border-radius: 8px; text-align: center;">
+                        <h3 style="color: var(--accent-color); font-size: 2.5rem; margin-bottom: 5px; padding: 0;">114</h3>
+                        <p style="font-size: 0.95rem; opacity: 0.8; font-weight: bold;">Vitórias em Grandes Prémios</p>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="section-divider">
+
+            <!-- SECÇÃO: CAMPEÕES (Filtrada sem duplicações) -->
+            <section class="brands-section">
+                <div class="section-title">
+                    <h2> Campeões e Lendas </h2>
+                    <p> Os 7 pilotos imortais que conquistaram o título mundial com as máquinas de Grove </p>
+                </div>
+                <div class="brands-grid">
+
+                    <div class="brand-card b-f1-jones">
+                        <span>Alan Jones</span>
+                    </div>
+                    <div class="brand-card b-f1-rosberg">
+                        <span>Keke Rosberg</span>
+                    </div>
+                    <div class="brand-card b-f1-piquet">
+                        <span>Nelson Piquet</span>
+                    </div>
+                    <div class="brand-card b-f1-mansell">
+                        <span>Nigel Mansell</span>
+                    </div>
+                    <div class="brand-card b-f1-prost">
+                        <span>Alain Prost</span>
+                    </div>
+                    <div class="brand-card b-f1-hill">
+                        <span>Damon Hill</span>
+                    </div>
+                    <div class="brand-card b-f1-villeneuve">
+                        <span>Jacques Villeneuve</span>
+                    </div>
+
+
+
+                    
+                </div>
+            </section>
+
+            <!-- SECÇÃO: PILOTOS ATUAIS -->
+            <section class="brands-section" style="margin-top: 40px;">
+                <div class="section-title">
+                    <h2> Pilotos Atuais </h2>
+                    <p> O alinhamento oficial da equipa na grelha </p>
+                </div>
+                <div class="brands-grid">
+
+                    <div class="brand-card b-f1-albon">
+                        <span>Alex Albon</span>
+                    </div>
+                    <div class="brand-card b-f1-sainz">
+                        <span>Carlos Sainz</span>
+                    </div>
+
+
+                </div>
+            </section>
+
+        </main>
+        
+        <!-- BOTÃO VOLTAR AO TOPO E FOOTER -->
+        <button id="back-to-top" title="Voltar ao topo"> <i class="fas fa-arrow-up"> </i> </button>
+
+        <footer class="main-footer">
+            <div class="container footer-content">
+                <p>&copy; 2026 Racing Hub. </p>
+            </div>
+        </footer>
+
+
+        <!-- JANELA MODAL DOS PILOTOS DE F1 -->
+        <div id="brand-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <div style="display: flex; align-items: center; gap: 15px;">
+                    <h2 id="modal-title" style="margin: 0;">Nome do Piloto</h2>
+                    <img id="modal-flag-img" src="" alt="Bandeira" style="width: 40px; height: auto; border-radius: 4px; box-shadow: 0 2px 4px rgba(0,0,0,0.3); display: none;">
+                </div>
+                <hr class="section-divider" style="margin: 15px 0;">
+                
+                <div class="modal-body-layout">
+                    <p style="font-size: 1.1rem; margin-bottom: 8px;"><strong>Idade:</strong> <span id="modal-age">-</span> anos</p>
+                    <p style="font-size: 1.1rem; margin-bottom: 15px;"><strong>Equipas Anteriores:</strong> <span id="modal-teams">-</span></p>
+                    
+                    <p id="modal-desc">Biografia resumida do piloto no desporto...</p>
+                    
+                    <h3>Galeria / Destaque:</h3>
+                    <div id="modal-models-list" class="modal-scroll-area"></div>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="script.js"> </script>
+    </body>
+</html>

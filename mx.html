@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="icon.png">
+        <title> MX - Motocross | Racing Hub </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+        
+    <body class="dark-mode">
+        <!-- HEADER (Igual ao das restantes páginas para consistência) -->
+        <header class="main-header">
+            <div class="header-container">
+                <a href="index.html" class="logo"> 
+                    <span class="racing">RACING</span> <span class="hub">HUB</span>
+                </a>
+                <button class="menu-toggle" aria-label="Abrir Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="index.html"> Início </a> </li>
+                        <li><a href="motocross.html"> Motocross </a> </li>
+                        <li><a href="f1.html"> F1 </a> </li>
+                        <li><a href="motogp.html"> MotoGP </a> </li>
+                        <li><a href="drift.html"> Drift </a> </li>
+                        <li><a href="rally.html"> Rally </a> </li>
+                        <li><a href="worldsbk.html"> WorldSBK </a> </li>
+                        <li><a href="contactos.html"> Contactos </a> </li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <button id="theme-theme-toggle" class="theme-btn" title="Mudar Modo">
+                        <i class="fas fa-moon"> </i>
+                    </button>
+                </div>
+            </div>  
+        </header>
+
+        <!-- HERO BANNER -->
+        <section class="hero-banner" style="background: linear-gradient(0deg, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+        url('https://www.mxgp.com/sites/default/files/news/image/GEERTS-SAT-MOTOCROSS-GP-8-SPA-2025.jpg') no-repeat center center/cover;">
+            <div class="slide active">
+                <div class="slide-content">
+                    <h1> Campeonato Mundial de MX </h1>
+                    <p> A máxima expressão do motociclismo fora de estrada em circuitos de terra natural </p>
+                    <a href="#sobre-mx" class="btn-primary"> Descobrir Mais </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTEÚDO PRINCIPAL -->
+        <main class="container main-content" id="sobre-mx">
+
+            <div style="max-width: 800px; margin: 20px auto 0 auto; padding: 0 20px;">
+                <a href="motocross.html" style="display: inline-flex; align-items: center; gap: 10px; color: #fff; text-decoration: none; font-weight: bold; font-size: 0.95rem; opacity: 0.8; transition: opacity 0.2s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.8'">
+                    <i class="fas fa-arrow-left"></i> Voltar à Página Motocross Principal
+                </a>
+            </div>
+            
+            <!-- SECÇÃO: EM QUE CONSISTE -->
+            <section class="info-section" style="margin-top: 40px;">
+                <div class="section-title">
+                    <h2> O que é o MX? </h2>
+                    <p> Disciplina pura de velocidade e resistência em circuitos fechados de terra, lama ou areia </p>
+                </div>
+                <div style="line-height: 1.8; opacity: 0.9; max-width: 800px; margin: 0 auto; text-align: justify;">
+                    <p>O <strong>MX (Motocross)</strong> moderno destaca-se pelos saltos duplos, triplos, mesas e secções de "whoops" (sucessões de pequenas lombas rápidas). Ao contrário do Supercross, que é feito em estádios, as pistas de MX são mais longas, largas e dependem fortemente das condições meteorológicas, tornando a escolha de pneus e a resistência física os fatores mais decisivos.</p>
+                    <p style="margin-top: 15px;"><strong>Formato de Corrida:</strong> Os fins de semana de MXGP consistem em duas mangas por categoria. Cada manga tem a duração regulamentar de <strong>30 minutos mais 2 voltas</strong>. O piloto que acumular mais pontos no somatório de ambas as mangas vence o Grande Prémio.</p>
+                </div>
+            </section>
+
+            <hr class="section-divider">
+
+            <!-- SECÇÃO: HISTÓRIA -->
+            <section class="history-section">
+                <div class="section-title">
+                    <h2> As Origens e História </h2>
+                    <p> De competições locais no Reino Unido ao topo do desporto motorizado mundial </p>
+                </div>
+                <div style="line-height: 1.8; opacity: 0.9; max-width: 800px; margin: 0 auto; text-align: justify;">
+                    <p>O Motocross evoluiu a partir dos <i>"Scrambles"</i> britânicos realizados no início do século XX (a primeira corrida oficial registada aconteceu em Camberley, em 1924). O nome nasceu da fusão entre as palavras <strong>Motorcycle</strong> e <strong>Cross-Country</strong>.</p>
+                    <p style="margin-top: 15px;">Após a Segunda Guerra Mundial, as motas rigidamente pesadas deram lugar a suspensões traseiras e quadros mais leves. O primeiro Campeonato da Europa oficial foi introduzido pela FIM em 1952 para motores de 500cc, sendo promovido a estatuto de Campeonato do Mundo em 1957, marcando o início da era de ouro do MX.</p>
+                </div>
+            </section>
+
+            <hr class="section-divider">
+
+            <!-- SECÇÃO: CATEGORIAS (MXGP vs MX2) -->
+            <section class="classes-section">
+                <div class="section-title">
+                    <h2> Categorias Principais </h2>
+                    <p> As duas frentes de batalha que compõem o paddock do mundial </p>
+                </div>
+                <div class="video-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+                    <div class="video-card" style="padding: 20px; background: rgba(255,255,255,0.05); border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);">
+                        <h3 style="color: #e50914; font-size: 1.5rem; margin-bottom: 10px;">MXGP (Classe Rainha)</h3>
+                        <p style="font-size: 0.95rem; opacity: 0.8;">Aberta a motos de 450cc a 4 tempos (ou 250cc a 2 tempos). É onde correm os pilotos mais experientes e laureados do planeta, exigindo controlo absoluto de potência bruta.</p>
+                    </div>
+                    <div class="video-card" style="padding: 20px; background: rgba(255,255,255,0.05); border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);">
+                        <h3 style="color: #e50914; font-size: 1.5rem; margin-bottom: 10px;">MX2 (Jovens Talentos)</h3>
+                        <p style="font-size: 0.95rem; opacity: 0.8;">Destinada a motos de 250cc a 4 tempos (ou 125cc a 2 tempos). Tem uma restrição etária máxima de 23 anos, servindo como a rampa de lançamento para as futuras estrelas mundiais.</p>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="section-divider">
+
+            <!-- SECÇÃO: CONSTRUTORES DE TOPO NO MX -->
+            <section class="brands-section">
+                <div class="section-title">
+                    <h2> Construtores de Topo no MX </h2>
+                    <p> As marcas oficiais que lutam pelo troféu de engenharia fora de estrada </p>
+                </div>
+                
+                <div class="brands-grid">
+                    <!-- KTM -->
+                    <div class="brand-card b-mx-ktm">
+                        <span>KTM</span>
+                    </div>
+
+                    <!-- YAMAHA -->
+                    <div class="brand-card b-mx-yamaha">
+                        <span>YAMAHA</span>
+                    </div>
+
+                    <!-- HONDA -->
+                    <div class="brand-card b-mx-honda">
+                        <span>HONDA</span>
+                    </div>
+
+                    <!-- KAWASAKI -->
+                    <div class="brand-card b-mx-kawasaki">
+                        <span>KAWASAKI</span>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        
+        <!-- BOTÃO VOLTAR AO TOPO E FOOTER -->
+        <button id="back-to-top" title="Voltar ao topo"> <i class="fas fa-arrow-up"> </i> </button>
+
+        <footer class="main-footer">
+            <div class="container footer-content">
+                <p>&copy; 2026 Racing Hub. </p>
+            </div>
+        </footer>
+
+        <!-- JANELA MODAL DINÂMICA -->
+        <div id="brand-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h2 id="modal-title"></h2>
+                <div class="modal-body-layout">
+                    <p id="modal-desc"></p>
+                    <h3>Modelos em Destaque</h3>
+                    <div id="modal-models-list" class="modal-scroll-area">
+                        <!-- Os blocos dos veículos vão ser injetados aqui pelo JS -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"> </script>
+    </body>
+</html>

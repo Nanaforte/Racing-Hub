@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/png" href="icon.png">
+		<title> Racing Hub | O Portal dos Desportos Motorizados </title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	</head>
+		
+	<body class="dark-mode">
+		<header class="main-header">
+				<div class="header-container">
+					<a href="index.html" class="logo"> 
+						<span class="racing">RACING</span> <span class="hub">HUB</span>
+					</a>
+
+					<button class="menu-toggle" aria-label="Abrir Menu">
+						<i class="fas fa-bars"></i>
+					</button>
+
+					<nav class="nav-menu">
+						<ul>
+							<li><a href="index.html"> Início </a> </li>
+							<li><a href="motocross.html"> Motocross </a> </li>
+							<li><a href="f1.html"> F1 </a> </li>
+							<li><a href="motogp.html"> MotoGP </a> </li>
+							<li><a href="drift.html"> Drift </a> </li>
+							<li><a href="rally.html"> Rally </a> </li>
+							<li><a href="worldsbk.html"> WorldSBK </a> </li>
+							<li><a href="contactos.html"> Contactos </a> </li>
+						</ul>
+					</nav>
+
+					<div class="header-actions">
+							<button id="theme-theme-toggle" class="theme-btn" title="Mudar Modo">
+								<i class="fas fa-moon"> </i>
+							</button>
+						</div>
+					</div>	
+ 		</header>
+
+		<section class="hero-banner">
+			<div class="slide active">
+				<div class="slide-content">
+					<h1> A Paixão pela Velocidade </h1>
+					<p> Explora o mundo da F1, MotoGP, Rally e muito mais num só lugar </p>
+					<a href="#categorias" class="btn-primary"> Explorar Marcas </a>
+				</div>
+
+				<div class="categories-grid">
+					<a href="motocross.html" class="category-card c-motocross">
+						<span>Motocross</span>
+					</a>
+					<a href="f1.html" class="category-card c-f1">
+						<span>F1</span>
+					</a>
+					<a href="motogp.html" class="category-card c-motogp">
+						<span>MotoGP</span>
+					</a>
+					<a href="drift.html" class="category-card c-drift">
+						<span>Drift</span>
+					</a>
+					<a href="rally.html" class="category-card c-rally">
+						<span>Rally</span>
+					</a>
+					<a href="worldsbk.html" class="category-card c-superbike">
+						<span>WorldSBK</span>
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<main class="container main-content" id="categorias">
+
+			<hr class="section-divider">
+
+			<section class="brands-section">
+				<div class="section-title">
+					<h2> Os carros de cada marca histórica</h2>
+				</div>
+				
+				<div class="brands-grid">
+					<div class="brand-card b-ferrari">
+						<span>Ferrari</span>
+					</div>
+					<div class="brand-card b-mclaren">
+						<span>McLaren</span>
+					</div>
+					<div class="brand-card b-toyota">
+						<span>Toyota</span>
+					</div>
+					<div class="brand-card b-nissan">
+						<span>Nissan</span>
+					</div>
+					<div class="brand-card b-subaru">
+						<span>Subaru</span>
+					</div>
+					<div class="brand-card b-bmw">
+						<span>BMW</span>
+					</div>
+					<div class="brand-card b-porsche">
+						<span>Porsche</span>
+					</div>
+					<div class="brand-card b-ford">
+						<span>Ford</span>
+					</div>
+					<div class="brand-card b-hondacar">
+						<span>Honda</span>
+					</div>
+					<div class="brand-card b-mazda">
+						<span>Mazda</span>
+					</div>
+				</div>
+			</section>
+
+			<hr class="section-divider">
+
+			<section class="brands-section">
+				<div class="section-title">
+					<h2> As motas mais conhecidas de cada Marca </h2>
+				</div>
+				
+				<div class="brands-grid">
+					<div class="brand-card b-yamaha">
+						<span>Yamaha</span>
+					</div>
+					<div class="brand-card b-hondamota">
+						<span>Honda</span>
+					</div>
+					<div class="brand-card b-ducati">
+						<span>Ducati</span>
+					</div>
+					<div class="brand-card b-kawasaki">
+						<span>Kawasaki</span>
+					</div>
+					<div class="brand-card b-ktm">
+						<span>KTM</span>
+					</div>
+					<div class="brand-card b-suzuki">
+						<span>Suzuki</span>
+					</div>
+					<div class="brand-card b-aprilia">
+						<span>Aprilia</span>
+					</div>
+					<div class="brand-card b-bmwmotorrad">
+						<span>BMW Motorrad</span>
+					</div>
+				</div>
+			</section>
+		</main>
+		
+		<button id="back-to-top" title="Voltar ao topo"> <i class="fas fa-arrow-up"> </i> </button>
+
+		<footer class="main-footer">
+			<div class="container footer-content">
+				<p>&copy; 2026 Racing Hub. </p>
+			</div>
+		</footer>
+
+		<div id="brand-modal" class="modal">
+			<div class="modal-content">
+				<span class="close-modal">&times;</span>
+				<h2 id="modal-title">Título da Marca</h2>
+				<hr class="section-divider" style="margin: 15px 0;">
+				
+				<div class="modal-body-layout">
+					<p id="modal-desc">Descrição sobre a marca...</p>
+					<h3>Modelos de Destaque:</h3>
+					
+					<div id="modal-models-list" class="modal-scroll-area"></div>
+				</div>
+			</div>
+		</div>
+
+		<script src="script.js"> </script>
+			
+	</body>
+</html>

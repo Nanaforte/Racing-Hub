@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="icon.png">
+        <title> Alpine | Racing Hub </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <style>
+            /* Sobrecrita local para aplicar o Azul Alpine oficial da equipa */
+            :root {
+                --accent-color: #005EA6; 
+            }
+            body.light-mode {
+                --accent-color: #004b85; /* Tom ligeiramente mais escuro para garantir o contraste ideal no modo claro */
+            }
+            /* Garante a consistência visual das bordas com os restantes cartões do projeto */
+            .video-card {
+                border: 1px solid var(--accent-color) !important;
+            }
+        </style>
+    </head>
+        
+    <body class="dark-mode">
+        <!-- HEADER (Consistente com todo o projeto) -->
+        <header class="main-header">
+            <div class="header-container">
+                <a href="index.html" class="logo"> 
+                    <span class="racing">RACING</span> <span class="hub">HUB</span>
+                </a>
+                <button class="menu-toggle" aria-label="Abrir Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="index.html"> Início </a> </li>
+                        <li><a href="motocross.html"> Motocross </a> </li>
+                        <li><a href="f1.html"> F1 </a> </li>
+                        <li><a href="motogp.html"> MotoGP </a> </li>
+                        <li><a href="drift.html"> Drift </a> </li>
+                        <li><a href="rally.html"> Rally </a> </li>
+                        <li><a href="worldsbk.html"> WorldSBK </a> </li>
+                        <li><a href="contactos.html"> Contactos </a> </li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <button id="theme-theme-toggle" class="theme-btn" title="Mudar Modo">
+                        <i class="fas fa-moon"> </i>
+                    </button>
+                </div>
+            </div>  
+        </header>
+
+        <!-- HERO BANNER -->
+        <section class="hero-banner" style="background: linear-gradient(0deg, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+        url('https://media.alpinecars.com/wp-content/uploads/2024/01/ec183209f124129301b0dba364ac3805.jpeg') no-repeat center center/cover;">
+            <div class="slide active">
+                <div class="slide-content">
+                    <h1> Alpine </h1>
+                    <p> O Orgulho do Automobilismo Francês: Estilo, Resiliência e Tradição Desportiva </p>
+                    <a href="#sobre-alpine" class="btn-primary"> Entrar em Enstone </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTEÚDO PRINCIPAL -->
+        <main class="container main-content" id="sobre-alpine">
+
+            <div style="max-width: 800px; margin: 20px auto 0 auto; padding: 0 20px;">
+                <a href="f1.html" style="display: inline-flex; align-items: center; gap: 10px; color: var(--text-main); text-decoration: none; font-weight: bold; font-size: 0.95rem; opacity: 0.8; transition: var(--transition-smooth);" onmouseover="this.style.color='var(--accent-color)'" onmouseout="this.style.color='var(--text-main)'">
+                    <i class="fas fa-arrow-left"></i> Voltar à Página F1 Principal
+                </a>
+            </div>
+            
+            <!-- SECÇÃO: QUEM SÃO -->
+            <section class="info-section" style="margin-top: 40px;">
+                <div class="section-title">
+                    <h2> A Nova Identidade do Grupo Renault </h2>
+                    <p> A reestruturação de uma equipa histórica com os olhos postos no futuro </p>
+                </div>
+                <div style="line-height: 1.8; opacity: 0.9; max-width: 800px; margin: 0 auto; text-align: justify;">
+                    <p>A <strong>Alpine</strong>, sediada em Enstone, no Reino Unido (com os seus motores tradicionalmente desenvolvidos em Viry-Châtillon, França), representa o braço desportivo de elite do Grupo Renault. Rebatizada em 2021 para promover a mítica marca de carros desportivos Alpine, a equipa carrega a enorme responsabilidade de honrar um dos nomes mais revolucionários da história do desporto motorizado, conhecido mundialmente pelas suas cores azul e rosa elétrico.</p>
+                </div>
+            </section>
+
+            <hr class="section-divider">
+
+            <!-- SECÇÃO: HISTÓRIA -->
+            <section class="history-section">
+                <div class="section-title">
+                    <h2> Das Inovações do Turbo à Era Benetton e Renault </h2>
+                    <p> A fábrica de Enstone que moldou lendas e conquistou o mundo </p>
+                </div>
+                <div style="line-height: 1.8; opacity: 0.9; max-width: 800px; margin: 0 auto; text-align: justify;">
+                    <p>Embora o nome Alpine na F1 seja recente, a raiz da equipa remonta à icónica equipa Toleman dos anos 1980 (onde Ayrton Senna se estreou), que mais tarde se transformou na Benetton — conquistando títulos com Michael Schumacher. Adquirida pela Renault, a estrutura viveu o seu auge absoluto em 2005 e 2006, quando travaram batalhas titânicas contra a Ferrari e a McLaren, levando o espanhol Fernando Alonso à conquista do seu bicampeonato mundial.</p>
+                    <p style="margin-top: 15px;">A transição para Alpine trouxe um novo fôlego estético e momentos de pura magia, como a impressionante e inesperada vitória de Esteban Ocon no GP da Hungria em 2021, provando que a equipa mantém o ADN competitivo e a capacidade de surpreender os favoritos nos palcos mais exigentes da Fórmula 1.</p>
+                </div>
+            </section>
+
+            <hr class="section-divider">
+
+            <!-- SECÇÃO: PALMARÉS -->
+            <section class="classes-section">
+                <div class="section-title">
+                    <h2> Estatísticas e Legado Histórico </h2>
+                    <p> O registo acumulado pelas várias eras da estrutura de Enstone / Viry </p>
+                </div>
+                <div class="video-grid" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));">
+                    <div class="video-card" style="padding: 20px; background: rgba(255,255,255,0.05); border-radius: 8px; text-align: center;">
+                        <h3 style="color: var(--accent-color); font-size: 2.5rem; margin-bottom: 5px; padding: 0;">2</h3>
+                        <p style="font-size: 0.95rem; opacity: 0.8; font-weight: bold;">Títulos de Construtores (Como Renault)</p>
+                    </div>
+                    <div class="video-card" style="padding: 20px; background: rgba(255,255,255,0.05); border-radius: 8px; text-align: center;">
+                        <h3 style="color: var(--accent-color); font-size: 2.5rem; margin-bottom: 5px; padding: 0;">2</h3>
+                        <p style="font-size: 0.95rem; opacity: 0.8; font-weight: bold;">Títulos de Pilotos (F. Alonso)</p>
+                    </div>
+                    <div class="video-card" style="padding: 20px; background: rgba(255,255,255,0.05); border-radius: 8px; text-align: center;">
+                        <h3 style="color: var(--accent-color); font-size: 2.5rem; margin-bottom: 5px; padding: 0;">36</h3>
+                        <p style="font-size: 0.95rem; opacity: 0.8; font-weight: bold;">Vitórias Totais da Estrutura</p>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="section-divider">
+
+            <!-- SECÇÃO: PILOTOS COM IMAGENS -->
+            <section class="brands-section">
+                <div class="section-title">
+                    <h2> Pilotos que Marcaram e Marcam a Marca </h2>
+                    <p> Os rostos e insígnias que definem a herança desportiva da equipa </p>
+                </div>
+                <div class="brands-grid">
+                    <div class="brand-card b-f1-ocon">
+                        <span>Esteban Ocon</span>
+                    </div>
+                    <div class="brand-card b-f1-alonso">
+                        <span>Fernando Alonso</span>
+                    </div>
+                    <div class="brand-card b-f1-gasly">
+                        <span>Pierre Gasly</span>
+                    </div>
+                    <div class="brand-card b-f1-colapinto">
+                        <span>Franco Colapinto</span>
+                    </div>
+                    
+                </div>
+            </section>
+
+        </main>
+        
+        <!-- BOTÃO VOLTAR AO TOPO E FOOTER -->
+        <button id="back-to-top" title="Voltar ao topo"> <i class="fas fa-arrow-up"> </i> </button>
+
+        <footer class="main-footer">
+            <div class="container footer-content">
+                <p>&copy; 2026 Racing Hub. </p>
+            </div>
+        </footer>
+
+
+        <!-- JANELA MODAL DOS PILOTOS DE F1 -->
+        <div id="brand-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <div style="display: flex; align-items: center; gap: 15px;">
+                    <h2 id="modal-title" style="margin: 0;">Nome do Piloto</h2>
+                    <img id="modal-flag-img" src="" alt="Bandeira" style="width: 40px; height: auto; border-radius: 4px; box-shadow: 0 2px 4px rgba(0,0,0,0.3); display: none;">
+                </div>
+                <hr class="section-divider" style="margin: 15px 0;">
+                
+                <div class="modal-body-layout">
+                    <p style="font-size: 1.1rem; margin-bottom: 8px;"><strong>Idade:</strong> <span id="modal-age">-</span> anos</p>
+                    <p style="font-size: 1.1rem; margin-bottom: 15px;"><strong>Equipas Anteriores:</strong> <span id="modal-teams">-</span></p>
+                    
+                    <p id="modal-desc">Biografia resumida do piloto no desporto...</p>
+                    
+                    <h3>Galeria / Destaque:</h3>
+                    <div id="modal-models-list" class="modal-scroll-area"></div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <script src="script.js"> </script>
+    </body>
+</html>

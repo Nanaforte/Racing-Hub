@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="icon.png">
+        <title> Mercedes | Racing Hub </title>
+        <link rel="stylesheet" href="style.css">
+        <!-- Classe de especialização para forçar o tema da Mercedes nesta página -->
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <style>
+            /* Sobrecrita local das variáveis para focar no Verde Petronas da Mercedes nesta página */
+            :root {
+                --accent-color: #00A19B; /* Cor Predominante da Mercedes */
+            }
+            body.light-mode {
+                --accent-color: #00827d; /* Tom ligeiramente mais escuro para contraste no modo claro */
+            }
+            /* Garante que as bordas dos cards de vídeo usem a cor da Mercedes */
+            .video-card {
+                border: 1px solid var(--accent-color) !important;
+            }
+        </style>
+    </head>
+        
+    <body class="dark-mode">
+        <!-- HEADER (Consistente com todo o projeto) -->
+        <header class="main-header">
+            <div class="header-container">
+                <a href="index.html" class="logo"> 
+                    <span class="racing">RACING</span> <span class="hub">HUB</span>
+                </a>
+                <button class="menu-toggle" aria-label="Abrir Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="index.html"> Início </a> </li>
+                        <li><a href="motocross.html"> Motocross </a> </li>
+                        <li><a href="f1.html"> F1 </a> </li>
+                        <li><a href="motogp.html"> MotoGP </a> </li>
+                        <li><a href="drift.html"> Drift </a> </li>
+                        <li><a href="rally.html"> Rally </a> </li>
+                        <li><a href="worldsbk.html"> WorldSBK </a> </li>
+                        <li><a href="contactos.html"> Contactos </a> </li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <button id="theme-theme-toggle" class="theme-btn" title="Mudar Modo">
+                        <i class="fas fa-moon"> </i>
+                    </button>
+                </div>
+            </div>  
+        </header>
+
+        <!-- HERO BANNER -->
+        <section class="hero-banner" style="background: linear-gradient(0deg, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+        url('https://www.f1mania.net/wp-content/uploads/2026/01/M560079-crop-1769077077-1805x617.jpg') no-repeat center center/cover;">
+            <div class="slide active">
+                <div class="slide-content">
+                    <h1> Mercedes </h1>
+                    <p> A Engenharia Alemã no Topo do Mundo: Determinação, Inovação e Legado </p>
+                    <a href="#sobre-mercedes" class="btn-primary"> Conhecer a Equipa </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTEÚDO PRINCIPAL -->
+        <main class="container main-content" id="sobre-mercedes">
+
+            <div style="max-width: 800px; margin: 20px auto 0 auto; padding: 0 20px;">
+                <a href="f1.html" style="display: inline-flex; align-items: center; gap: 10px; color: var(--text-main); text-decoration: none; font-weight: bold; font-size: 0.95rem; opacity: 0.8; transition: var(--transition-smooth);" onmouseover="this.style.color='var(--accent-color)'" onmouseout="this.style.color='var(--text-main)'">
+                    <i class="fas fa-arrow-left"></i> Voltar à Página F1 Principal
+                </a>
+            </div>
+            
+            <!-- SECÇÃO: QUEM SÃO -->
+            <section class="info-section" style="margin-top: 40px;">
+                <div class="section-title">
+                    <h2> O Legado das Flechas de Prata </h2>
+                    <p> Uma das forças mais dominantes e tecnologicamente avançadas da história do desporto </p>
+                </div>
+                <div style="line-height: 1.8; opacity: 0.9; max-width: 800px; margin: 0 auto; text-align: justify;">
+                    <p>A <strong>Mercedes</strong>, sediada em Brackley, no Reino Unido (mas competindo com licença alemã), é sinónimo de excelência técnica na Fórmula 1. Após regressar como equipa de fábrica em 2010, a estrutura liderada por Toto Wolff cimentou o seu nome nos livros de história ao alcançar um feito sem precedentes: <strong>8 campeonatos mundiais de construtores consecutivos</strong> entre 2014 e 2021, dominando por completo a primeira fase da era dos motores Turbo Híbridos V6.</p>
+                </div>
+            </section>
+
+            <hr class="section-divider">
+
+            <!-- SECÇÃO: HISTÓRIA -->
+            <section class="history-section">
+                <div class="section-title">
+                    <h2> A Origem e o Regresso Triunfal </h2>
+                    <p> Dos anos 1950 com Fangio à compra da histórica Brawn GP </p>
+                </div>
+                <div style="line-height: 1.8; opacity: 0.9; max-width: 800px; margin: 0 auto; text-align: justify;">
+                    <p>A história da Mercedes na F1 divide-se em duas eras douradas. A primeira aconteceu nos anos de 1954 e 1955, onde as lendárias "Flechas de Prata" originais dominaram as pistas e levaram Juan Manuel Fangio à conquista de dois títulos mundiais. No entanto, após o trágico acidente nas 24 Horas de Le Mans em 1955, a Mercedes retirou-se por completo do desporto automóvel de competição durante décadas.</p>
+                    <p style="margin-top: 15px;">O verdadeiro renascimento deu-se no final de 2009, when a Daimler comprou a campeã em título Brawn GP. A equipa regressou à grelha em 2010 trazendo de volta da reforma ninguém menos que o heptacampeão Michael Schumacher, preparando o terreno técnico para a contratação de Lewis Hamilton em 2013 e a explosão de títulos que se seguiu.</p>
+                </div>
+            </section>
+
+            <hr class="section-divider">
+
+            <!-- SECÇÃO: PALMARÉS -->
+            <section class="classes-section">
+                <div class="section-title">
+                    <h2> Vitórias e Números Históricos </h2>
+                    <p> O registo estatístico de uma potência das pistas </p>
+                </div>
+                <div class="video-grid" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));">
+                    <div class="video-card" style="padding: 20px; background: rgba(255,255,255,0.05); border-radius: 8px; text-align: center;">
+                        <h3 style="color: var(--accent-color); font-size: 2.5rem; margin-bottom: 5px; padding: 0;">8</h3>
+                        <p style="font-size: 0.95rem; opacity: 0.8; font-weight: bold;">Títulos de Construtores</p>
+                    </div>
+                    <div class="video-card" style="padding: 20px; background: rgba(255,255,255,0.05); border-radius: 8px; text-align: center;">
+                        <h3 style="color: var(--accent-color); font-size: 2.5rem; margin-bottom: 5px; padding: 0;">9</h3>
+                        <p style="font-size: 0.95rem; opacity: 0.8; font-weight: bold;">Títulos de Pilotos</p>
+                    </div>
+                    <div class="video-card" style="padding: 20px; background: rgba(255,255,255,0.05); border-radius: 8px; text-align: center;">
+                        <h3 style="color: var(--accent-color); font-size: 2.5rem; margin-bottom: 5px; padding: 0;">120+</h3>
+                        <p style="font-size: 0.95rem; opacity: 0.8; font-weight: bold;">Vitórias em Grandes Prémios</p>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="section-divider">
+
+            <!-- SECÇÃO: PILOTOS LENDÁRIOS -->
+            <section class="brands-section">
+                <div class="section-title">
+                    <h2> Pilotos Lendários </h2>
+                    <p> Os heróis que guiaram as máquinas prateadas rumo à imortalidade </p>
+                </div>
+                <div class="brands-grid">
+                    <div class="brand-card b-f1-hamilton">
+                        <span>Lewis Hamilton</span>
+                    </div>
+                    <div class="brand-card b-f1-fangio">
+                        <span>Juan Fangio</span>
+                    </div>
+                    <div class="brand-card b-f1-schumacher">
+                        <span>Michael Schumacher</span>
+                    </div>
+                    <div class="brand-card b-f1-rosberg">
+                        <span>Nico Rosberg</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECÇÃO: PILOTOS ATUAIS -->
+            <section class="brands-section">
+                <div class="section-title">
+                    <h2> Pilotos Atuais </h2>
+                </div>
+                <div class="brands-grid">
+                    <div class="brand-card b-f1-russell">
+                        <span>George Russell</span>
+                    </div>
+                    <div class="brand-card b-f1-antonelli">
+                        <span>Kimi Antonelli</span>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        
+        <!-- BOTÃO VOLTAR AO TOPO E FOOTER -->
+        <button id="back-to-top" title="Voltar ao topo"> <i class="fas fa-arrow-up"> </i> </button>
+
+        <footer class="main-footer">
+            <div class="container footer-content">
+                <p>&copy; 2026 Racing Hub. </p>
+            </div>
+        </footer>
+
+        <!-- JANELA MODAL DOS PILOTOS DE F1 -->
+        <div id="brand-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <div style="display: flex; align-items: center; gap: 15px;">
+                    <h2 id="modal-title" style="margin: 0;">Nome do Piloto</h2>
+                    <img id="modal-flag-img" src="" alt="Bandeira" style="width: 40px; height: auto; border-radius: 4px; box-shadow: 0 2px 4px rgba(0,0,0,0.3); display: none;">
+                </div>
+                <hr class="section-divider" style="margin: 15px 0;">
+                
+                <div class="modal-body-layout">
+                    <p style="font-size: 1.1rem; margin-bottom: 8px;"><strong>Idade:</strong> <span id="modal-age">-</span> anos</p>
+                    <p style="font-size: 1.1rem; margin-bottom: 15px;"><strong>Equipas Anteriores:</strong> <span id="modal-teams">-</span></p>
+                    
+                    <p id="modal-desc">Biografia resumida do piloto no desporto...</p>
+                    
+                    <h3>Galeria / Destaque:</h3>
+                    <div id="modal-models-list" class="modal-scroll-area"></div>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"> </script>
+    </body>
+</html>

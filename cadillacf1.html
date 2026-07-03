@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="icon.png">
+        <title> Cadillac | Racing Hub </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <style>
+            /* Sobrecrita local para aplicar o Amarelo/Dourado oficial da Cadillac Racing */
+            :root {
+                --accent-color: #FFB800; 
+            }
+            body.light-mode {
+                --accent-color: #D99B00; /* Tom ajustado para legibilidade e contraste em fundos claros */
+            }
+            /* Ajuste específico para o texto do botão principal no modo escuro manter legibilidade */
+            body.dark-mode .btn-primary {
+                color: #000 !important;
+                font-weight: bold;
+            }
+            /* Garante consistência visual de bordas com os restantes cartões do projeto */
+            .video-card {
+                border: 1px solid var(--accent-color) !important;
+            }
+        </style>
+    </head>
+        
+    <body class="dark-mode">
+        <!-- HEADER (Consistente com todo o projeto) -->
+        <header class="main-header">
+            <div class="header-container">
+                <a href="index.html" class="logo"> 
+                    <span class="racing">RACING</span> <span class="hub">HUB</span>
+                </a>
+                <button class="menu-toggle" aria-label="Abrir Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="index.html"> Início </a> </li>
+                        <li><a href="motocross.html"> Motocross </a> </li>
+                        <li><a href="f1.html"> F1 </a> </li>
+                        <li><a href="motogp.html"> MotoGP </a> </li>
+                        <li><a href="drift.html"> Drift </a> </li>
+                        <li><a href="rally.html"> Rally </a> </li>
+                        <li><a href="worldsbk.html"> WorldSBK </a> </li>
+                        <li><a href="contactos.html"> Contactos </a> </li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <button id="theme-theme-toggle" class="theme-btn" title="Mudar Modo">
+                        <i class="fas fa-moon"> </i>
+                    </button>
+                </div>
+            </div>  
+        </header>
+
+        <!-- HERO BANNER -->
+        <section class="hero-banner" style="background: linear-gradient(0deg, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+        url('https://grandepremio.com/br/wp-content/uploads/2026/05/canada-corrida-f1-2026-cadillac-valtteri-bottas-01-scaled.jpg') no-repeat center center/cover;">
+            <div class="slide active">
+                <div class="slide-content">
+                    <h1> Cadillac </h1>
+                    <p> Potência Americana, Luxo e a Nova Força Competitiva na Fórmula 1 </p>
+                    <a href="#sobre-cadillac" class="btn-primary"> Entrar em Detroit </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTEÚDO PRINCIPAL -->
+        <main class="container main-content" id="sobre-cadillac">
+
+            <div style="max-width: 800px; margin: 20px auto 0 auto; padding: 0 20px;">
+                <a href="f1.html" style="display: inline-flex; align-items: center; gap: 10px; color: var(--text-main); text-decoration: none; font-weight: bold; font-size: 0.95rem; opacity: 0.8; transition: var(--transition-smooth);" onmouseover="this.style.color='var(--accent-color)'" onmouseout="this.style.color='var(--text-main)'">
+                    <i class="fas fa-arrow-left"></i> Voltar à Página F1 Principal
+                </a>
+            </div>
+            
+            <!-- SECÇÃO: QUEM SÃO -->
+            <section class="info-section" style="margin-top: 40px;">
+                <div class="section-title">
+                    <h2> O Gigante de Detroit no Paddock </h2>
+                    <p> A lendária marca da General Motors junta-se à elite mundial do desporto motorizado </p>
+                </div>
+                <div style="line-height: 1.8; opacity: 0.9; max-width: 800px; margin: 0 auto; text-align: justify;">
+                    <p>A <strong>Cadillac</strong> representa a entrada triunfal de um dos maiores e mais icónicos símbolos da indústria automóvel americana na Fórmula 1. Com o apoio tecnológico maciço da General Motors (GM) e em parceria com a estrutura de topo da Andretti Global, a equipa traz uma nova dinâmica de rivalidade transatlântica ao campeonato. Exibindo uma identidade visual marcada pela sofisticação, inovação e cores inspiradas no seu brasão heráldico, a Cadillac assume-se como uma força de fábrica ambiciosa.</p>
+                </div>
+            </section>
+
+            <hr class="section-divider">
+
+            <!-- SECÇÃO: HISTÓRIA -->
+            <section class="history-section">
+                <div class="section-title">
+                    <h2> Da Glória nas Corridas de Resistência à Conquista do Monolugar </h2>
+                    <p> A expansão estratégica do braço desportivo da General Motors para a grelha mundial </p>
+                </div>
+                <div style="line-height: 1.8; opacity: 0.9; max-width: 800px; margin: 0 auto; text-align: justify;">
+                    <p>O percurso moderno da Cadillac no automobilismo foi construído com vitórias estrondosas e domínio absoluto nos campeonatos de resistência (Endurance), como o IMSA e as prestigiadas 24 Horas de Le Mans, através dos seus potentes protótipos V-Series. Esse sucesso nas pistas de resistência pavimentou o caminho e deu a confiança necessária à administração em Detroit para dar o passo definitivo em direção à categoria rainha.</p>
+                    <p style="margin-top: 15px;">A operação da equipa divide-se entre as modernas instalações da Andretti em Fishers, Indiana, e o apoio técnico direto do centro de engenharia da GM em Charlotte, na Carolina do Norte. Focada no desenvolvimento de uma unidade de potência própria e de alta tecnologia a médio prazo, a Cadillac entra no campeonato com o claro objetivo de desafiar o domínio das grandes construtoras europeias.</p>
+                </div>
+            </section>
+
+            <hr class="section-divider">
+
+            <!-- SECÇÃO: PALMARÉS -->
+            <section class="classes-section">
+                <div class="section-title">
+                    <h2> O Legado Desportivo em Números </h2>
+                    <p> O histórico de impacto e grandes conquistas da insígnia da General Motors </p>
+                </div>
+                <div class="video-grid" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));">
+                    <div class="video-card" style="padding: 20px; background: rgba(255,255,255,0.05); border-radius: 8px; text-align: center;">
+                        <h3 style="color: var(--accent-color); font-size: 2.5rem; margin-bottom: 5px; padding: 0;">6</h3>
+                        <p style="font-size: 0.95rem; opacity: 0.8; font-weight: bold;">Títulos na Categoria IMSA DPi</p>
+                    </div>
+                    <div class="video-card" style="padding: 20px; background: rgba(255,255,255,0.05); border-radius: 8px; text-align: center;">
+                        <h3 style="color: var(--accent-color); font-size: 2.5rem; margin-bottom: 5px; padding: 0;">4</h3>
+                        <p style="font-size: 0.95rem; opacity: 0.8; font-weight: bold;">Vitórias nas 24h de Daytona</p>
+                    </div>
+                    <div class="video-card" style="padding: 20px; background: rgba(255,255,255,0.05); border-radius: 8px; text-align: center;">
+                        <h3 style="color: var(--accent-color); font-size: 2.5rem; margin-bottom: 5px; padding: 0;">100%</h3>
+                        <p style="font-size: 0.95rem; opacity: 0.8; font-weight: bold;">Comprometimento Tecnológico GM</p>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="section-divider">
+
+            <!-- SECÇÃO: PILOTOS -->
+            <section class="brands-section">
+                <div class="section-title">
+                    <h2> Figuras Chave e Pilotos </h2>
+                    <p> Nomes marcantes que lideram e impulsionam o projeto desportivo global da marca na grelha </p>
+                </div>
+                <div class="brands-grid">
+                    <div class="brand-card b-f1-perez">
+                        <span>Sergio Perez</span>
+                    </div>
+                    <div class="brand-card b-f1-bottas">
+                        <span>Valtteri Bottas</span>
+                    </div>
+                    
+                </div>
+            </section>
+
+        </main>
+        
+        <!-- BOTÃO VOLTAR AO TOPO E FOOTER -->
+        <button id="back-to-top" title="Voltar ao topo"> <i class="fas fa-arrow-up"> </i> </button>
+
+        <footer class="main-footer">
+            <div class="container footer-content">
+                <p>&copy; 2026 Racing Hub. </p>
+            </div>
+        </footer>
+
+                <!-- JANELA MODAL DOS PILOTOS DE F1 -->
+        <div id="brand-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <div style="display: flex; align-items: center; gap: 15px;">
+                    <h2 id="modal-title" style="margin: 0;">Nome do Piloto</h2>
+                    <img id="modal-flag-img" src="" alt="Bandeira" style="width: 40px; height: auto; border-radius: 4px; box-shadow: 0 2px 4px rgba(0,0,0,0.3); display: none;">
+                </div>
+                <hr class="section-divider" style="margin: 15px 0;">
+                
+                <div class="modal-body-layout">
+                    <p style="font-size: 1.1rem; margin-bottom: 8px;"><strong>Idade:</strong> <span id="modal-age">-</span> anos</p>
+                    <p style="font-size: 1.1rem; margin-bottom: 15px;"><strong>Equipas Anteriores:</strong> <span id="modal-teams">-</span></p>
+                    
+                    <p id="modal-desc">Biografia resumida do piloto no desporto...</p>
+                    
+                    <h3>Galeria / Destaque:</h3>
+                    <div id="modal-models-list" class="modal-scroll-area"></div>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"> </script>
+    </body>
+</html>

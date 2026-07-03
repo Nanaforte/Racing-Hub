@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="icon.png">
+        <title> MotoGP | Racing Hub </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+        
+    <body class="dark-mode">
+        <header class="main-header">
+            <div class="header-container">
+                <a href="index.html" class="logo"> 
+                    <span class="racing">RACING</span> <span class="hub">HUB</span>
+                </a>
+
+                <button class="menu-toggle" aria-label="Abrir Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="index.html"> Início </a> </li>
+                        <li><a href="motocross.html"> Motocross </a> </li>
+                        <li><a href="f1.html"> F1 </a> </li>
+                        <li><a href="motogp.html"> MotoGP </a> </li>
+                        <li><a href="drift.html"> Drift </a> </li>
+                        <li><a href="rally.html"> Rally </a> </li>
+                        <li><a href="worldsbk.html"> WorldSBK </a> </li>
+                        <li><a href="contactos.html"> Contactos </a> </li>
+                    </ul>
+                </nav>
+
+                <div class="header-actions">
+                    <button id="theme-theme-toggle" class="theme-btn" title="Mudar Modo">
+                        <i class="fas fa-moon"> </i>
+                    </button>
+                </div>
+            </div>  
+        </header>
+
+        <section class="hero-banner" style="background: linear-gradient(0deg, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+        url('https://www.jornaldotocantins.com.br/image/policy:1.3389114:1774122864/image.jpg?f=3x2') no-repeat center center/cover;">
+            <div class="slide active">
+                <div class="slide-content">
+                    <h1> MotoGP </h1>
+                    <p> Velocidade Extrema em Duas Rodas, Curvas no Limite e Adrenalina Pura </p>
+                    <a href="#sobre-motogp" class="btn-primary"> Descobrir Mais </a>
+                </div>
+            </div>
+        </section>
+
+        <main class="container main-content" id="sobre-motogp">
+
+            <div style="max-width: 800px; margin: 20px auto 0 auto; padding: 0 20px;">
+                <a href="index.html" style="display: inline-flex; align-items: center; gap: 10px; color: #fff; text-decoration: none; font-weight: bold; font-size: 0.95rem; opacity: 0.8; transition: opacity 0.2s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.8'">
+                    <i class="fas fa-arrow-left"></i> Voltar à Página Principal
+                </a>
+            </div>
+            
+            <section class="info-section" style="margin-top: 40px;">
+                <div class="section-title">
+                    <h2> O que é o MotoGP? </h2>
+                    <p> A categoria máxima do motociclismo de velocidade em circuitos de asfalto </p>
+                </div>
+                <div style="line-height: 1.8; opacity: 0.9; max-width: 800px; margin: 0 auto; text-align: justify;">
+                    <p>O <strong>MotoGP</strong> é o campeonato de motociclismo mais antigo do mundo e representa o pináculo da engenharia sobre duas rodas. Ao contrário de outras competições, as motos utilizadas aqui são <strong>protótipos puros</strong>, construídos exclusivamente para a competição e não partilhados com modelos comerciais de estrada. Os pilotos enfrentam forças extremas, atingindo ângulos de inclinação superiores a 60° nas curvas.</p>
+                    <p style="margin-top: 15px;"><strong>Formato de Corrida:</strong> Os fins de semana de Grande Prémio incluem a inovadora corrida <strong>Sprint</strong> ao sábado (com metade da distância e pontuação da corrida principal) e o **Grande Prémio** ao domingo, a prova rainha que define os verdadeiros mestres da consistência e da gestão de pneus.</p>
+                </div>
+            </section>
+
+            <hr class="section-divider">
+
+            <section class="history-section">
+                <div class="section-title">
+                    <h2> As Origens e História </h2>
+                    <p> Desde o campeonato inaugural em 1949 até à era tecnológica moderna </p>
+                </div>
+                <div style="line-height: 1.8; opacity: 0.9; max-width: 800px; margin: 0 auto; text-align: justify;">
+                    <p>O Campeonato do Mundo de Velocidade foi regulamentado pela FIM (Federação Internacional de Motociclismo) em <strong>1949</strong>. Nos seus primeiros anos, as categorias eram divididas estritamente pela cilindrada dos motores (50cc, 125cc, 250cc, 350cc e 500cc), dominadas maioritariamente por motores a dois tempos devido à sua leveza e resposta rápida.</p>
+                    <p style="margin-top: 15px;">Em <strong>2002</strong>, o desporto sofreu uma revolução: a antiga classe de 500cc foi substituída pelo conceito moderno de <strong>MotoGP</strong>, abrindo as portas aos motores de quatro tempos de alta cilindrada. Hoje, a competição alia aerodinâmica avançada (asas e apêndices), sistemas de ajuste de altura em tempo real (*holeshot devices*) e eletrónica complexa.</p>
+                </div>
+            </section>
+
+            <hr class="section-divider">
+
+            <section class="classes-section">
+                <div class="section-title">
+                    <h2> Categorias do Paddock </h2>
+                    <p> As três classes que formam a escada de progressão até ao topo mundial </p>
+                </div>
+                <div class="video-grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+                    <div class="video-card" style="padding: 20px; background: rgba(255,255,255,0.05); border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);">
+                        <h3 style="color: #e50914; font-size: 1.4rem; margin-bottom: 10px;">MotoGP</h3>
+                        <p style="font-size: 0.95rem; opacity: 0.8;">A classe rainha. Protótipos de 1000cc a 4 tempos capazes de ultrapassar os 360 km/h. Exige o nível físico e mental mais elevado do desporto motorizado.</p>
+                    </div>
+                    <div class="video-card" style="padding: 20px; background: rgba(255,255,255,0.05); border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);">
+                        <h3 style="color: #e50914; font-size: 1.4rem; margin-bottom: 10px;">Moto2</h3>
+                        <p style="font-size: 0.95rem; opacity: 0.8;">A categoria intermédia. Utiliza motores tricilíndricos de 765cc fornecidos pela Triumph e chassis idênticos para realçar estritamente o talento do piloto.</p>
+                    </div>
+                    <div class="video-card" style="padding: 20px; background: rgba(255,255,255,0.05); border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);">
+                        <h3 style="color: #e50914; font-size: 1.4rem; margin-bottom: 10px;">Moto3</h3>
+                        <p style="font-size: 0.95rem; opacity: 0.8;">A porta de entrada. Motores monocilíndricos de 250cc. Conhecida por corridas caóticas e disputas em pelotão com vácuo até à linha de meta.</p>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="section-divider">
+
+            <section class="brands-section">
+                <div class="section-title">
+                    <h2> Lendas do MotoGP </h2>
+                </div>
+                
+                <div class="brands-grid">
+                    <a class="brand-card" style="background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), 
+                    url('https://www.autohebdo.fr/app/uploads/2025/04/giacomo-agostini-at-the-festival-of-speed-2023.-ph.-by-pa.jpg') no-repeat center center/cover; height: 120px; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
+                        <span style="font-weight: bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);">Giacomo Agostini</span>
+                    </a>
+
+                    <a  class="brand-card" style="background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), 
+                    url('https://images.impresa.pt/sicnot/2016-11-14-AP_16304311698697.jpg/original') no-repeat center center/cover; height: 120px; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
+                        <span style="font-weight: bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);">Valentino Rossi</span>
+                    </a>
+
+                    <a class="brand-card" style="background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), 
+                    url('https://cdn.record.pt/images/2026-06/img_476x268uu2026-06-21-16-09-05-2445919.jpg') no-repeat center center/cover; height: 120px; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
+                        <span style="font-weight: bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);">Marc Márquez</span>
+                    </a>
+
+                    <a class="brand-card" style="background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), 
+                    url('https://aushof.mymedia.delivery/1920x1265/p/o/wp-content/uploads/2023/01/Mick-Doohan-1994-Press.jpg') no-repeat center center/cover; height: 120px; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
+                        <span style="font-weight: bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);">Mick Doohan</span>
+                    </a>
+
+                    <a class="brand-card" style="background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), 
+                    url('https://bxrepsol.s3.eu-west-1.amazonaws.com/static/2022/08/29084357/00_jorge_lorenzo_repsol_honda_presentacion_2019_motogp.jpg') no-repeat center center/cover; height: 120px; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
+                        <span style="font-weight: bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);">Jorge Lorenzo</span>
+                    </a>
+
+                    <a class="brand-card" style="background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), 
+                    url('https://i0.wp.com/infomoto.com.au/wp-content/uploads/2023/10/Casey_Stoner_1.jpg?fit=1001%2C565&ssl=1') no-repeat center center/cover; height: 120px; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
+                        <span style="font-weight: bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);">Casey Stoner</span>
+                    </a>
+                </div>
+            </section>
+
+
+            <hr class="section-divider">
+
+
+            <section class="brands-section">
+                <div class="section-title">
+                    <h2> Grandes nomes do Moto2 </h2>
+                </div>
+                
+                <div class="brands-grid">
+                    <a class="brand-card" style="background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), 
+                    url('https://cdn.cmjornal.pt/images/2025-05/img_1500x1000uu2025-05-11-15-56-16-2208196.jpg') no-repeat center center/cover; height: 120px; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
+                        <span style="font-weight: bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);">Johann Zarco</span>
+                    </a>
+
+                    <a class="brand-card" style="background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), 
+                    url('https://staticx.noticiasilimitadas.pt/oj/image.webp?brand=oj&type=generate&guid=ef3e51b4-6e92-4392-bf05-3a849b52431a&w=3840') no-repeat center center/cover; height: 120px; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
+                        <span style="font-weight: bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);">Marc Márquez</span>
+                    </a>
+
+                    <a class="brand-card" style="background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), 
+                    url('https://www.hostettler.com/wp-content/uploads/2019/03/SP_FP_Tom-Lu%CC%88thi-iXS_01-2020.jpg') no-repeat center center/cover; height: 120px; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
+                        <span style="font-weight: bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);">Thomas Lüthi</span>
+                    </a>
+
+                    <a class="brand-card" style="background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), 
+                    url('https://www.motosan.es/wp-content/uploads/2020/07/53-tito-rabat-esplg5_9771.gallery_full_top_lg.jpg') no-repeat center center/cover; height: 120px; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
+                        <span style="font-weight: bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);">Tito Rabat</span>
+                    </a>
+
+                    <a class="brand-card" style="background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), 
+                    url('https://grandepremio.com/br/wp-content/uploads/2025/01/666536_Acosta_KTM_RC16_MotoGP_Team-Presentation_2025_02_Brad-Binder-_-Pedro-Acosta-_-Red-Bull-KTM-Factory-Racing-2025.jpg') no-repeat center center/cover; height: 120px; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
+                        <span style="font-weight: bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);">Pedro Acosta</span>
+                    </a>
+
+                </div>
+            </section>
+
+
+            <hr class="section-divider">
+
+
+            <section class="brands-section">
+                <div class="section-title">
+                    <h2> Ícones do Moto3 </h2>
+                </div>
+                
+                <div class="brands-grid">
+                    <a class="brand-card" style="background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), 
+                    url('https://upload.wikimedia.org/wikipedia/commons/4/4b/%C3%81ngel_Nieto_Motegi_2002.jpg') no-repeat center center/cover; height: 120px; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
+                        <span style="font-weight: bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);">Ángel Nieto</span>
+                    </a>
+
+                    <a class="brand-card" style="background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), 
+                    url('https://davidalonso80.com/wp-content/uploads/2024/03/AsparTeamMoto3_00Portimao-32-scaled.jpg') no-repeat center center/cover; height: 120px; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
+                        <span style="font-weight: bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);">David Alonso</span>
+                    </a>
+
+                    <a class="brand-card" style="background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), 
+                    url('https://bordalo.observador.pt/v2/q:60/rs:fill:980/c:2000:1126:nowe:0:0/plain/https://s3.observador.pt/wp-content/uploads/2022/08/30104619/38786305.jpg') no-repeat center center/cover; height: 120px; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
+                        <span style="font-weight: bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);">Joan Mir</span>
+                    </a>
+
+                    <a class="brand-card" style="background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), 
+                    url('https://ticketsgp.vshcdn.net/uploads/images/749/motogp-brad-binder-red-bull-ktm-alpine-motogpaustria-motogpitaly-motogpassen-motogpsilverstone-motogpmugello-motogpjerez-motogpsachsenring.jpg') no-repeat center center/cover; height: 120px; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
+                        <span style="font-weight: bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);">Brad Binder</span>
+                    </a>
+
+                </div>
+            </section>
+
+
+
+        </main>
+        
+        <button id="back-to-top" title="Voltar ao topo"> <i class="fas fa-arrow-up"> </i> </button>
+
+        <footer class="main-footer">
+            <div class="container footer-content">
+                <p>&copy; 2026 Racing Hub. </p>
+            </div>
+        </footer>
+
+        <script src="script.js"> </script>
+            
+    </body>
+</html>

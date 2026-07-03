@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="icon.png">
+        <title> Contactos | Racing Hub </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+        
+    <body class="dark-mode">
+        <header class="main-header">
+                <div class="header-container">
+                    <a href="index.html" class="logo"> 
+                        <span class="racing">RACING</span> <span class="hub">HUB</span>
+                    </a>
+
+                    <button class="menu-toggle" aria-label="Abrir Menu">
+                        <i class="fas fa-bars"></i>
+                    </button>
+
+                    <nav class="nav-menu">
+                        <ul>
+                            <li><a href="index.html"> Início </a> </li>
+                            <li><a href="motocross.html"> Motocross </a> </li>
+                            <li><a href="f1.html"> F1 </a> </li>
+                            <li><a href="motogp.html"> MotoGP </a> </li>
+                            <li><a href="drift.html"> Drift </a> </li>
+                            <li><a href="rally.html"> Rally </a> </li>
+                            <li><a href="worldsbk.html"> WorldSBK </a> </li>
+                            <li><a href="contactos.html"> Contactos </a> </li>
+                        </ul>
+                    </nav>
+
+                    <div class="header-actions">
+                        <button id="theme-theme-toggle" class="theme-btn" title="Mudar Modo">
+                            <i class="fas fa-moon"> </i>
+                        </button>
+                    </div>
+                </div>  
+        </header>
+
+        <section class="hero-banner" style="background: linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+        url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2070&auto=format&fit=crop') no-repeat center center/cover;">
+            <div class="slide active">
+                <div class="slide-content">
+                    <h1> Fala Connosco </h1>
+                    <p> Tens dúvidas, sugestões ou queres anunciar no Racing Hub? Entra em contacto! </p>
+                    <a href="#formulario-contacto" class="btn-primary"> Enviar Mensagem </a>
+                </div>
+            </div>
+        </section>
+
+        <main class="container main-content" id="formulario-contacto">
+
+            <div style="max-width: 800px; margin: 20px auto 0 auto; padding: 0 20px;">
+                <a href="index.html" style="display: inline-flex; align-items: center; gap: 10px; color: #fff; text-decoration: none; font-weight: bold; font-size: 0.95rem; opacity: 0.8; transition: opacity 0.2s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.8'">
+                    <i class="fas fa-arrow-left"></i> Voltar à Página Principal
+                </a>
+            </div>
+            
+            <div class="contact-wrapper" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; margin-top: 40px;">
+                
+                <section class="contact-info" style="display: flex; flex-direction: column; gap: 20px;">
+                    <div class="section-title" style="text-align: left; margin-bottom: 20px;">
+                        <h2> Informações </h2>
+                        <p> Encontra-nos através dos canais oficiais </p>
+                    </div>
+
+                    <div class="info-item" style="display: flex; align-items: center; gap: 15px;">
+                        <i class="fas fa-envelope" style="color: #e50914; font-size: 1.5rem; width: 30px; text-align: center;"></i>
+                        <div>
+                            <h4 style="margin: 0; font-size: 1.1rem;"> E-mail Geral </h4>
+                            <p style="margin: 5px 0 0 0; opacity: 0.8;">geral@racinghub.pt</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item" style="display: flex; align-items: center; gap: 15px;">
+                        <i class="fas fa-ad" style="color: #e50914; font-size: 1.5rem; width: 30px; text-align: center;"></i>
+                        <div>
+                            <h4 style="margin: 0; font-size: 1.1rem;"> Parcerias e Publicidade </h4>
+                            <p style="margin: 5px 0 0 0; opacity: 0.8;">marketing@racinghub.pt</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item" style="display: flex; align-items: center; gap: 15px;">
+                        <i class="fas fa-map-marker-alt" style="color: #e50914; font-size: 1.5rem; width: 30px; text-align: center;"></i>
+                        <div>
+                            <h4 style="margin: 0; font-size: 1.1rem;"> Localização </h4>
+                            <p style="margin: 5px 0 0 0; opacity: 0.8;">Lisboa, Portugal</p>
+                        </div>
+                    </div>
+
+                    <div class="map-container" style="width: 100%; border-radius: 8px; overflow: hidden; margin-top: 15px; border: 1px solid rgba(255,255,255,0.1);">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199212.0151147573!2d-9.29809985732101!3d38.74373955627725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd19331a61e4f33b%3A0x400ebbde49036d0!2sLisboa!5e0!3m2!1spt-PT!2spt!4v1700000000000!5m2!1spt-PT!2spt" 
+                            width="100%" 
+                            height="250" 
+                            style="border:0; display: block;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                    <hr class="section-divider" style="margin: 10px 0; border: 0; border-top: 1px solid rgba(255,255,255,0.1);">
+
+                    <div>
+                        <h4 style="margin-bottom: 10px;"> Siga as nossas Redes </h4>
+                        <div class="social-links" style="display: flex; gap: 15px;">
+                            <a href="#" style="font-size: 1.8rem; color: inherit; transition: color 0.3s;"><i class="fab fa-facebook"></i></a>
+                            <a href="#" style="font-size: 1.8rem; color: inherit; transition: color 0.3s;"><i class="fab fa-instagram"></i></a>
+                            <a href="#" style="font-size: 1.8rem; color: inherit; transition: color 0.3s;"><i class="fab fa-youtube"></i></a>
+                            <a href="#" style="font-size: 1.8rem; color: inherit; transition: color 0.3s;"><i class="fab fa-x-twitter"></i></a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="contact-form-section">
+                    <div class="section-title" style="text-align: left; margin-bottom: 20px;">
+                        <h2> Enviar Mensagem </h2>
+                    </div>
+
+                    <form class="contact-form" style="display: flex; flex-direction: column; gap: 15px;">
+                        <div class="form-group" style="display: flex; flex-direction: column; gap: 5px;">
+                            <label for="name" style="font-weight: 600;"> Nome Completo </label>
+                            <input type="text" id="name" required placeholder="O seu nome..." style="padding: 12px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.2); background: rgba(255,255,255,0.05); color: #fff; font-family: inherit;">
+                        </div>
+
+                        <div class="form-group" style="display: flex; flex-direction: column; gap: 5px;">
+                            <label for="email" style="font-weight: 600;"> E-mail </label>
+                            <input type="email" id="email" required placeholder="O seu e-mail..." style="padding: 12px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.2); background: rgba(255,255,255,0.05); color: #fff; font-family: inherit;">
+                        </div>
+
+                        <div class="form-group" style="display: flex; flex-direction: column; gap: 5px;">
+                            <label for="subject" style="font-weight: 600;"> Assunto </label>
+                            <input type="text" id="subject" required placeholder="Qual o motivo do contacto?" style="padding: 12px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.2); background: rgba(255,255,255,0.05); color: #fff; font-family: inherit;">
+                        </div>
+
+                        <div class="form-group" style="display: flex; flex-direction: column; gap: 5px;">
+                            <label for="message" style="font-weight: 600;"> Mensagem </label>
+                            <textarea id="message" rows="5" required placeholder="Escreva aqui a sua mensagem..." style="padding: 12px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.2); background: rgba(255,255,255,0.05); color: #fff; font-family: inherit; resize: vertical;"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-primary" style="align-self: flex-start; cursor: pointer; border: none; padding: 12px 25px;"> Enviar Mensagem </button>
+                    </form>
+                </section>
+
+            </div>
+
+        </main>
+        
+        <button id="back-to-top" title="Voltar ao topo"> <i class="fas fa-arrow-up"> </i> </button>
+
+        <footer class="main-footer">
+            <div class="container footer-content">
+                <p>&copy; 2026 Racing Hub. </p>
+            </div>
+        </footer>
+
+        <script src="script.js"> </script>
+            
+    </body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="icon.png">
+        <title> Audi | Racing Hub </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <style>
+            /* Sobrecrita local para aplicar o Vermelho Fluorescente da Audi Sport */
+            :root {
+                --accent-color: #F50537; 
+            }
+            body.light-mode {
+                --accent-color: #D6042E; /* Tom adaptado para garantir legibilidade no modo claro */
+            }
+            /* Garante consistência visual de bordas com os restantes cartões do projeto */
+            .video-card {
+                border: 1px solid var(--accent-color) !important;
+            }
+        </style>
+    </head>
+        
+    <body class="dark-mode">
+        <!-- HEADER (Consistente com todo o projeto) -->
+        <header class="main-header">
+            <div class="header-container">
+                <a href="index.html" class="logo"> 
+                    <span class="racing">RACING</span> <span class="hub">HUB</span>
+                </a>
+                <button class="menu-toggle" aria-label="Abrir Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="index.html"> Início </a> </li>
+                        <li><a href="motocross.html"> Motocross </a> </li>
+                        <li><a href="f1.html"> F1 </a> </li>
+                        <li><a href="motogp.html"> MotoGP </a> </li>
+                        <li><a href="drift.html"> Drift </a> </li>
+                        <li><a href="rally.html"> Rally </a> </li>
+                        <li><a href="worldsbk.html"> WorldSBK </a> </li>
+                        <li><a href="contactos.html"> Contactos </a> </li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <button id="theme-theme-toggle" class="theme-btn" title="Mudar Modo">
+                        <i class="fas fa-moon"> </i>
+                    </button>
+                </div>
+            </div>  
+        </header>
+
+        <!-- HERO BANNER -->
+        <section class="hero-banner" style="background: linear-gradient(0deg, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+        url('https://dam.mediacorp.sg/image/upload/s--5Pso8Cey--/c_crop,h_825,w_1100,x_249,y_208/c_fill,g_auto,h_622,w_830/f_auto,q_auto/v1/mediacorp/cna/image/2026/03/09/hero-f1-audi-revolut.jpg?itok=9aZBQysq') no-repeat center center/cover;">
+            <div class="slide active">
+                <div class="slide-content">
+                    <h1> Audi </h1>
+                    <p> Engenharia Alemã, Inovação e a Nova Era de Sucesso na Fórmula 1 </p>
+                    <a href="#sobre-audi" class="btn-primary"> Entrar em Neuburg </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTEÚDO PRINCIPAL -->
+        <main class="container main-content" id="sobre-audi">
+
+            <div style="max-width: 800px; margin: 20px auto 0 auto; padding: 0 20px;">
+                <a href="f1.html" style="display: inline-flex; align-items: center; gap: 10px; color: var(--text-main); text-decoration: none; font-weight: bold; font-size: 0.95rem; opacity: 0.8; transition: var(--transition-smooth);" onmouseover="this.style.color='var(--accent-color)'" onmouseout="this.style.color='var(--text-main)'">
+                    <i class="fas fa-arrow-left"></i> Voltar à Página F1 Principal
+                </a>
+            </div>
+            
+            <!-- SECÇÃO: QUEM SÃO -->
+            <section class="info-section" style="margin-top: 40px;">
+                <div class="section-title">
+                    <h2> A Vanguarda da Engenharia Alemã </h2>
+                    <p> O gigante do automobilismo entra no topo do desporto motorizado global </p>
+                </div>
+                <div style="line-height: 1.8; opacity: 0.9; max-width: 800px; margin: 0 auto; text-align: justify;">
+                    <p>A <strong>Audi</strong> representa um dos capítulos mais ambiciosos da história recente da Fórmula 1. Com a sua unidade de potência desenvolvida nas instalações de última geração em Neuburg an der Donau, na Alemanha, e a operação do chassis baseada em Hinwil, na Suíça, a marca dos quatro anéis traz consigo um legado histórico de domínio em Le Mans e no Rally Mundial (WRC). Combinando o preto fosco, o cinzento e o vermelho elétrico, a Audi entra na grelha para desafiar a hierarquia estabelecida.</p>
+                </div>
+            </section>
+
+            <hr class="section-divider">
+
+            <!-- SECÇÃO: HISTÓRIA -->
+            <section class="history-section">
+                <div class="section-title">
+                    <h2> Da Tradição de Hinwil ao Futuro dos Quatro Anéis </h2>
+                    <p> A evolução estratégica que transformou uma estrutura histórica numa equipa de fábrica </p>
+                </div>
+                <div style="line-height: 1.8; opacity: 0.9; max-width: 800px; margin: 0 auto; text-align: justify;">
+                    <p>O projeto da Audi na Fórmula 1 solidificou-se através da aquisição completa do Grupo Sauber, uma das estruturas mais respeitadas e duradouras do paddock, fundada por Peter Sauber. Esta fusão une a vasta experiência operacional e o túnel de vento de alta tecnologia na Suíça com a capacidade industrial e o poder de engenharia da Audi na Alemanha, criando uma verdadeira potência de fábrica.</p>
+                    <p style="margin-top: 15px;">A Audi não é uma desconhecida no mundo das corridas: o seu ADN é moldado pela introdução da mítica tração integral *quattro* no rali e pela revolução dos motores Diesel e híbridos nas 24 Horas de Le Mans. A entrada na Fórmula 1 foca-se na introdução dos combustíveis 100% sustentáveis e na expansão da eletrificação, áreas onde a marca alemã planeia redefinir os limites da performance em pista.</p>
+                </div>
+            </section>
+
+            <hr class="section-divider">
+
+            <!-- SECÇÃO: PALMARÉS -->
+            <section class="classes-section">
+                <div class="section-title">
+                    <h2> O Legado de Competição em Números </h2>
+                    <p> O histórico de sucesso do grupo Audi no desporto automóvel internacional </p>
+                </div>
+                <div class="video-grid" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));">
+                    <div class="video-card" style="padding: 20px; background: rgba(255,255,255,0.05); border-radius: 8px; text-align: center;">
+                        <h3 style="color: var(--accent-color); font-size: 2.5rem; margin-bottom: 5px; padding: 0;">13</h3>
+                        <p style="font-size: 0.95rem; opacity: 0.8; font-weight: bold;">Vitórias em Le Mans</p>
+                    </div>
+                    <div class="video-card" style="padding: 20px; background: rgba(255,255,255,0.05); border-radius: 8px; text-align: center;">
+                        <h3 style="color: var(--accent-color); font-size: 2.5rem; margin-bottom: 5px; padding: 0;">4</h3>
+                        <p style="font-size: 0.95rem; opacity: 0.8; font-weight: bold;">Títulos Mundiais de WRC</p>
+                    </div>
+                    <div class="video-card" style="padding: 20px; background: rgba(255,255,255,0.05); border-radius: 8px; text-align: center;">
+                        <h3 style="color: var(--accent-color); font-size: 2.5rem; margin-bottom: 5px; padding: 0;">100%</h3>
+                        <p style="font-size: 0.95rem; opacity: 0.8; font-weight: bold;">Foco em Motores Sustentáveis</p>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="section-divider">
+
+            <!-- SECÇÃO: FIGURAS HISTÓRICAS -->
+            <section class="brands-section">
+                <div class="section-title">
+                    <h2> Figuras e Pilotos Históricos </h2>
+                    <p> Nomes importantes que ajudaram no desenvolvimento e na transição da estrutura </p>
+                </div>
+                <div class="brands-grid">
+
+                    <div class="brand-card b-f1-nuvolari">
+                        <span>Tazio Nuvolari</span>
+                    </div>
+
+                    <div class="brand-card b-f1-rosemeyer">
+                        <span>Bernd Rosemeyer</span>
+                    </div>
+                    
+                </div>
+            </section>
+
+            <!-- SECÇÃO: PILOTOS ATUAIS -->
+            <section class="brands-section" style="margin-top: 40px;">
+                <div class="section-title">
+                    <h2> Pilotos Atuais </h2>
+                    <p> O alinhamento oficial da equipa na grelha </p>
+                </div>
+                <div class="brands-grid">
+                    <div class="brand-card b-f1-nico">
+                        <span>Nico Hülkenberg</span>
+                    </div>
+
+                    <div class="brand-card b-f1-bortotelo">
+                        <span>Gabriel Bortoleto</span>
+                    </div>
+                    
+                </div>
+            </section>
+
+        </main>
+        
+        <!-- BOTÃO VOLTAR AO TOPO E FOOTER -->
+        <button id="back-to-top" title="Voltar ao topo"> <i class="fas fa-arrow-up"> </i> </button>
+
+        <footer class="main-footer">
+            <div class="container footer-content">
+                <p>&copy; 2026 Racing Hub. </p>
+            </div>
+        </footer>
+
+
+        <!-- JANELA MODAL DOS PILOTOS DE F1 -->
+        <div id="brand-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <div style="display: flex; align-items: center; gap: 15px;">
+                    <h2 id="modal-title" style="margin: 0;">Nome do Piloto</h2>
+                    <img id="modal-flag-img" src="" alt="Bandeira" style="width: 40px; height: auto; border-radius: 4px; box-shadow: 0 2px 4px rgba(0,0,0,0.3); display: none;">
+                </div>
+                <hr class="section-divider" style="margin: 15px 0;">
+                
+                <div class="modal-body-layout">
+                    <p style="font-size: 1.1rem; margin-bottom: 8px;"><strong>Idade:</strong> <span id="modal-age">-</span> anos</p>
+                    <p style="font-size: 1.1rem; margin-bottom: 15px;"><strong>Equipas Anteriores:</strong> <span id="modal-teams">-</span></p>
+                    
+                    <p id="modal-desc">Biografia resumida do piloto no desporto...</p>
+                    
+                    <h3>Galeria / Destaque:</h3>
+                    <div id="modal-models-list" class="modal-scroll-area"></div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <script src="script.js"> </script>
+    </body>
+</html>
